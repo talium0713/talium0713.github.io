@@ -13,7 +13,7 @@ toc_icon: "gear"
 ## Preprints
 <div style="display: flex; align-items: flex-start;">
   <div>
-    <img src="path/to/Ideal_5.jpg" alt="Ideal 5" style="width: 150px; margin-right: 20px;">
+    <img src="assets/Ideal_5.jpg" alt="Ideal 5" style="width: 150px; margin-right: 20px;">
   </div>
   <div>
     - **Tractable and Provably Efficient Distributional Reinforcement Learning with General Value Function Approximation**
