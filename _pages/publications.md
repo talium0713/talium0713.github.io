@@ -11,6 +11,17 @@ toc_icon: "gear"
 ---
 
 ## Preprints
+<div style="display: flex; align-items: flex-start;">
+  <div>
+    <img src="path/to/Ideal_5.jpg" alt="Ideal 5" style="width: 150px; margin-right: 20px;">
+  </div>
+  <div>
+    - **Tractable and Provably Efficient Distributional Reinforcement Learning with General Value Function Approximation**
+      - **Taehyun Cho**, Seungyub Han, Seokhun Ju, Dohyeong Kim, Kyungjae Lee, Jungwoo Lee
+      - _NeurIPS 2024(On Submission)_
+  </div>
+</div>
+
 - **Tractable and Provably Efficient Distributional Reinforcement Learning with General Value Function Approximation**
   - **Taehyun Cho**, Seungyub Han, Seokhun Ju, Dohyeong Kim, Kyungjae Lee, Jungwoo Lee
   - _NeurIPS 2024(On Submission)_
@@ -58,6 +69,6 @@ toc_icon: "gear"
   - <a href="https://ieeexplore.ieee.org/abstract/document/9174757/">[Paper]</a>
 
 - **An Efficient Neural Network Architecture for Rate Maximization in Energy Harvesting Downlink Channels**
-  - Heasung Kim, Taehyun Cho, Jungwoo Lee, Wonjae Shin, H Vincent Poor
+  - Heasung Kim, **Taehyun Cho**, Jungwoo Lee, Wonjae Shin, H Vincent Poor
   - _2020 IEEE International Symposium on Information Theory (ISIT)_
   - <a href="https://ieeexplore.ieee.org/abstract/document/9174136">[Paper]</a>
