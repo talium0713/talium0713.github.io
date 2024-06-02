@@ -13,21 +13,20 @@ I am a Ph.D student at <a href="https://cml.snu.ac.kr/">CML Lab</a> in Seoul Nat
 </p>
 
 <p style="text-align: justify">
-<em>Considering</em>, <em>modeling</em>, and <em>optimizing</em> human decision-making processes to obtain theoretical results is how I approach research.
+My research focuses on <e>understanding</e>, <e>modeling</e>, and <e>optimizing</e> human decision-making processes to derive theoretical insights.
 </p>
 
 <p style="text-align: justify">
-<b><span style="color: magenta">I am currently open to any opportunities or collaborations 
-and interested in participating in a research internship related to reinforcement learning.</span></b> 
+<b><span style="color: magenta">I am currently open to new opportunities and collaborations. 
+I'm also interested in participating in research internships related to reinforcement learning.</span></b> 
 </p>
 
 
 ### My research interests are:
 - Distributional Reinforcement Learning
-- Regret Analysis /Bandit Theory
+- Regret Analysis / Bandit Theory
 - Preference-based Reinforcement Learning
 - Multi-agent Reinforcement Learning
-- and Any type of Reinforcement Learning Theory!
 
 ## Education
 
