@@ -41,7 +41,7 @@ I am a Ph.D student at <a href="https://cml.snu.ac.kr/">CML Lab</a> in Seoul Nat
 ## Experience
 - Teaching Assistant, **Introduction to Reinforcement Learning**, Seoul National University, Spring 2022
 - Teaching Assistant, **Introduction to Reinforcement Learning**, Seoul National University, Spring 2021
-- Military Service, ROK Air Force
+- Military Service, ROK Air Force, 2016-2018
 
 ## Academic Activities
 Reviewer: NeurIPS, ICML, ICLR, AAAI
