@@ -13,13 +13,14 @@ I am a Ph.D student at <a href="https://cml.snu.ac.kr/">CML Lab</a> in Seoul Nat
   
 <em>Considering</em>, <em>modeling</em>, and <em>optimizing</em> human decision-making processes to obtain theoretical results is how I approach research.
 
-<b>I am currently open to any opportunities or collaborations and interested in participating in a research internship related to reinforcement learning.</b>
+<b><span style="color: red">I am currently open to any opportunities or collaborations 
+and interested in participating in a research internship related to reinforcement learning.</span></b> 
 </p>
 
 
 ### My research interests are:
 - Distributional Reinforcement Learning
-- Regret Analysis
+- Regret Analysis /Bandit Theory
 - Preference-based Reinforcement Learning
 - Multi-agent Reinforcement Learning
 - and Any type of Reinforcement Learning Theory!
@@ -43,12 +44,7 @@ I am a Ph.D student at <a href="https://cml.snu.ac.kr/">CML Lab</a> in Seoul Nat
 ## Experience
 
 <table>
-  <tr>
-    <th>Position</th>
-    <th>Course</th>
-    <th>Institution</th>
-    <th>Term</th>
-  </tr>
+
   <tr>
     <td>Teaching Assistant</td>
     <td><strong>Introduction to Reinforcement Learning</strong></td>
@@ -69,9 +65,6 @@ I am a Ph.D student at <a href="https://cml.snu.ac.kr/">CML Lab</a> in Seoul Nat
   </tr>
 </table>
 
-- Teaching Assistant, **Introduction to Reinforcement Learning**, Seoul National University, Spring 2022
-- Teaching Assistant, **Introduction to Reinforcement Learning**, Seoul National University, Spring 2021
-- Military Service, ROK Air Force, 2016-2018
 
 ## Academic Activities
 Reviewer: NeurIPS, ICML, ICLR, AAAI
