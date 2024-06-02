@@ -10,7 +10,7 @@ toc_label: "Category"
 toc_icon: "gear"
 ---
 
-## Preprints
+## <u>Preprints</u>
 
 - **Tractable and Provably Efficient Distributional Reinforcement Learning with General Value Function Approximation**
   - **Taehyun Cho**, Seungyub Han, Seokhun Ju, Dohyeong Kim, Kyungjae Lee, Jungwoo Lee
@@ -25,7 +25,7 @@ toc_icon: "gear"
 - **Distributionally Robust Regret**
 
 
-## Conferences
+## <u>Conferences</u>
 
 - **Pitfall of Optimism: Distributional Reinforcement Learning by Randomizing Risk Criterion**
   - **Taehyun Cho**, Seungyub Han, Heesoo Lee, Kyungjae Lee, Jungwoo Lee
@@ -34,26 +34,26 @@ toc_icon: "gear"
     / <a href="https://arxiv.org/abs/2310.16546">[Arxiv]</a>
   
 - **SPQR: Controlling Q-ensemble Independence with Spiked Random Model for Reinforcement Learning**
-  - Dohyeok Lee, Seungyub Han, Taehyun Cho, Jungwoo Lee
+  - Dohyeok Lee, Seungyub Han, **Taehyun Cho**, Jungwoo Lee
   - _NeurIPS 2023_
   - <a href="https://openreview.net/forum?id=q0sdoFIfNg">[Paper]</a> / <a href="https://arxiv.org/abs/2401.03137">[Arxiv]</a>
 
-- **On the convergence of continual learning with adaptive methods**
-  - Seungyub Han, Yeongmo Kim, Taehyun Cho, Jungwoo Lee
+- **On the Convergence of Continual Learning with Adaptive Methods**
+  - Seungyub Han, Yeongmo Kim, **Taehyun Cho**, Jungwoo Lee
   - _UAI 2023_
   - <a href="On the Convergence of Continual Learning with Adaptive Methods">[Paper]</a>
 
-- **Chebyshev polynomial codes: Task entanglement-based coding for distributed matrix multiplication**
-  - Sangwoo Hong, Heecheol Yang, Youngseok Yoon, Taehyun Cho, Jungwoo Lee
+- **Chebyshev Polynomial Codes: Task Entanglement-based Coding for Distributed Matrix Multiplication**
+  - Sangwoo Hong, Heecheol Yang, Youngseok Yoon, **Taehyun Cho**, Jungwoo Lee
   - _ICML 2021_
   - <a href="https://proceedings.mlr.press/v139/hong21b.html">[Paper]</a>
 
 
 
 
-## Journals
+## <u>Journals</u>
 
-- **Optimized shallow neural networks for sum-rate maximization in energy harvesting downlink multiuser NOMA systems**
+- **Optimized Shallow Neural Networks for Sum-rate Maximization in Energy Harvesting Downlink Multiuser NOMA Systems**
   - Heasung Kim, **Taehyun Cho**, Jungwoo Lee, Wonjae Shin, H Vincent Poor
   - _IEEE Journal on Selected Areas in Communications_
   - <a href="https://ieeexplore.ieee.org/abstract/document/9174757/">[Paper]</a>
