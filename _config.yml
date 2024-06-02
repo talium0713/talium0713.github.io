@@ -114,7 +114,7 @@ analytics:
 author:
   name             : "Taehyun Cho"
   avatar           : "assets/Taehyun_Cho.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am interested in distributional reinforcement learning and regret analysis."
+  bio              : # "I am interested in distributional reinforcement learning and regret analysis."
   location         : "Seoul"
   email            : "talium@cml.snu.ac.kr"
   links:
