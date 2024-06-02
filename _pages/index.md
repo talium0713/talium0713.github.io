@@ -10,6 +10,8 @@ classes: wide
 
 <p style="text-align: justify">
 I am a Ph.D student at <a href="https://cml.snu.ac.kr/">CML Lab</a> in Seoul National University, advised by <a href="https://cml.snu.ac.kr/?page_id=5948">Jungwoo Lee</a>.
+_Considering_, _modeling_, and _optimizing_ human decision-making processes to obtain theoretical results is how I approach research.
+I am currently open to any opportunities or collaborations and interested in participating in a research internship related to reinforcement learning.
 </p>
 
 
@@ -36,9 +38,10 @@ I am a Ph.D student at <a href="https://cml.snu.ac.kr/">CML Lab</a> in Seoul Nat
 </table>
 
 
-## Teaching Experience
+## Experience
 - Teaching Assistant, **Introduction to Reinforcement Learning**, Seoul National University, Spring 2022
 - Teaching Assistant, **Introduction to Reinforcement Learning**, Seoul National University, Spring 2021
+- Military Service, ROK Air Force
 
 ## Academic Activities
 Reviewer: NeurIPS, ICML, ICLR, AAAI
