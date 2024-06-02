@@ -6,5 +6,5 @@ main:
     url: /publications/
   - title: "Personal Interest"
     url: /events/
-  - title: "Misc"
-    url: /misc/
+  - title: "Posts"
+    url: /posts/
