@@ -10,10 +10,14 @@ classes: wide
 
 <p style="text-align: justify">
 I am a Ph.D student at <a href="https://cml.snu.ac.kr/">CML Lab</a> in Seoul National University, advised by <a href="https://cml.snu.ac.kr/?page_id=5948">Jungwoo Lee</a>.
-  
-<em>Considering</em>, <em>modeling</em>, and <em>optimizing</em> human decision-making processes to obtain theoretical results is how I approach research.
+</p>
 
-<b><span style="color: red">I am currently open to any opportunities or collaborations 
+<p style="text-align: justify">
+<em>Considering</em>, <em>modeling</em>, and <em>optimizing</em> human decision-making processes to obtain theoretical results is how I approach research.
+</p>
+
+<p style="text-align: justify">
+<b><span style="color: magenta">I am currently open to any opportunities or collaborations 
 and interested in participating in a research internship related to reinforcement learning.</span></b> 
 </p>
 
