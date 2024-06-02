@@ -10,7 +10,7 @@ toc_label: "Category"
 toc_icon: "gear"
 ---
 
-# Preprints
+## Preprints
 - **Tractable and Provably Efficient Distributional Reinforcement Learning with General Value Function Approximation**
   - **Taehyun Cho**, Seungyub Han, Seokhun Ju, Dohyeong Kim, Kyungjae Lee, Jungwoo Lee
   - _NeurIPS 2024(On Submission)_
@@ -24,7 +24,6 @@ toc_icon: "gear"
 - **Distributionally Robust Regret**
 
 
-# Publications
 ## Conferences
 
 - **Pitfall of Optimism: Distributional Reinforcement Learning by Randomizing Risk Criterion**
