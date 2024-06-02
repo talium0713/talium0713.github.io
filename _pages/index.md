@@ -33,14 +33,14 @@ and interested in participating in a research internship related to reinforcemen
 
 <table>
   <tr>
-    <td> 2020-(Present). </td>
     <td> <b> Seoul National University, Korea. </b> </td>
     <td><em> M.S/ Ph.D in Electrical Engineering and Computer Science. </em> </td>
+    <td> 2020-(Present). </td>
   </tr>
   <tr>
-    <td> 2013-2020. </td>
     <td> <b> Korea University, Korea. </b> </td>
     <td> <em>Bachelor of Mathematics. </em> </td>
+    <td> 2013-2020. </td>
   </tr>
 </table>
 
@@ -63,7 +63,7 @@ and interested in participating in a research internship related to reinforcemen
   </tr>
   <tr>
     <td>Military Service</td>
-    <td>ROK Air Force</td>
+    <td><strong>ROK Air Force</strong></td>
     <td></td>
     <td>2016-2018</td>
   </tr>
