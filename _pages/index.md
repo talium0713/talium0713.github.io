@@ -13,7 +13,7 @@ I am a Ph.D student at <a href="https://cml.snu.ac.kr/">CML Lab</a> in Seoul Nat
 </p>
 
 <p style="text-align: justify">
-My research flow is mainy <em>inspired</em> by the human decision-making process, <em>mathematically modeling</em> it, and <em>optimizing</em> these models to derive theoretical results.
+My research flow is mainly <em>inspired</em> by the human decision-making process, <em>mathematically modeling</em> it, and <em>optimizing</em> these models to derive theoretical results.
 I enjoy the process of getting inspired by philosophy, gaming, reading, and talking to people.
 </p>
 
