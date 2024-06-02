@@ -11,7 +11,16 @@ toc_icon: "gear"
 ---
 
 ## Preprints
-- Distributional Regret
+- **Tractable and Provably Efficient Distributional Reinforcement Learning with General Value Function Approximation**
+  - **Taehyun Cho**, Seungyub Han, Seokhun Ju, Dohyeong Kim, Kyungjae Lee, Jungwoo Lee
+  - _NeurIPS 2024(On Submission)_
+
+- **Spectral-Risk Safe Reinforcement Learning with Convergence Guarantees**
+  - Dohyeong Kim, **Taehyun Cho**, Seungyub Han, Hojun Chung, Kyungjae Lee, Songhwai Oh
+  - _NeurIPS 2024(On Submission)_
+    
+- **Distributionally Robust Regret**
+
 
 ## Publications
 - **Pitfall of Optimism: Distributional Reinforcement Learning by Randomizing Risk Criterion**
