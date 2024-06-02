@@ -13,7 +13,8 @@ I am a Ph.D student at <a href="https://cml.snu.ac.kr/">CML Lab</a> in Seoul Nat
 </p>
 
 <p style="text-align: justify">
-My research focuses on <e>understanding</e>, <e>modeling</e>, and <e>optimizing</e> human decision-making processes to derive theoretical insights.
+My research flow is mainy <em>inspired</em> by the human decision-making process, <em>mathematically modeling</em> it, and <em>optimizing</em> these models to derive theoretical results.
+I enjoy the process of getting inspired by philosophy, gaming, reading, and talking to people.
 </p>
 
 <p style="text-align: justify">
