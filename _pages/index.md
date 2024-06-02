@@ -41,6 +41,34 @@ I am a Ph.D student at <a href="https://cml.snu.ac.kr/">CML Lab</a> in Seoul Nat
 
 
 ## Experience
+
+<table>
+  <tr>
+    <th>Position</th>
+    <th>Course</th>
+    <th>Institution</th>
+    <th>Term</th>
+  </tr>
+  <tr>
+    <td>Teaching Assistant</td>
+    <td><strong>Introduction to Reinforcement Learning</strong></td>
+    <td>Seoul National University</td>
+    <td>Spring 2022</td>
+  </tr>
+  <tr>
+    <td>Teaching Assistant</td>
+    <td><strong>Introduction to Reinforcement Learning</strong></td>
+    <td>Seoul National University</td>
+    <td>Spring 2021</td>
+  </tr>
+  <tr>
+    <td>Military Service</td>
+    <td>ROK Air Force</td>
+    <td></td>
+    <td>2016-2018</td>
+  </tr>
+</table>
+
 - Teaching Assistant, **Introduction to Reinforcement Learning**, Seoul National University, Spring 2022
 - Teaching Assistant, **Introduction to Reinforcement Learning**, Seoul National University, Spring 2021
 - Military Service, ROK Air Force, 2016-2018
