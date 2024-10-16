@@ -15,7 +15,7 @@ toc_icon: "gear"
 - **Tractable and Provably Efficient Distributional Reinforcement Learning with General Value Function Approximation**
   - **Taehyun Cho**, Seungyub Han, Seokhun Ju, Dohyeong Kim, Kyungjae Lee, Jungwoo Lee
   - _NeurIPS 2024(On Submission)_
-
+  - $$ \sum_{k=1}^K \mathcal{F}(f(x+\Psi)) dx$$
 
 - **Spectral-Risk Safe Reinforcement Learning with Convergence Guarantees**
   - Dohyeong Kim, **Taehyun Cho**, Seungyub Han, Hojun Chung, Kyungjae Lee, Songhwai Oh
