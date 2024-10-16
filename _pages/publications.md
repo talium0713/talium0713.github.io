@@ -14,18 +14,22 @@ toc_icon: "gear"
 
 - **Tractable and Provably Efficient Distributional Reinforcement Learning with General Value Function Approximation**
   - **Taehyun Cho**, Seungyub Han, Seokhun Ju, Dohyeong Kim, Kyungjae Lee, Jungwoo Lee
-  - _NeurIPS 2024(On Submission)_
-  - $$ \sum_{k=1}^K \mathcal{F}(f(x+\Psi)) dx $$.
+  - _ICLR 2025 (In Submission)_
 
-- **Spectral-Risk Safe Reinforcement Learning with Convergence Guarantees**
-  - Dohyeong Kim, **Taehyun Cho**, Seungyub Han, Hojun Chung, Kyungjae Lee, Songhwai Oh
-  - _NeurIPS 2024(On Submission)_
+- **Policy-labeled Preference Learning: Is Preference Enough for online RLHF?**
+  - **Taehyun Cho**, Seokhun Ju, Seungyub Han, Dohyeong Kim, Kyungjae Lee, Jungwoo Lee
+
 
     
 - **Distributionally Robust Regret**
 
 
 ## <u>Conferences</u>
+
+- **Spectral-Risk Safe Reinforcement Learning with Convergence Guarantees**
+  - Dohyeong Kim, **Taehyun Cho**, Seungyub Han, Hojun Chung, Kyungjae Lee, Songhwai Oh
+  - _NeurIPS 2024_
+
 
 - **Pitfall of Optimism: Distributional Reinforcement Learning by Randomizing Risk Criterion**
   - **Taehyun Cho**, Seungyub Han, Heesoo Lee, Kyungjae Lee, Jungwoo Lee
