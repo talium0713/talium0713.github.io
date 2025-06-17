@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Tractable and Provably Efficient Distributional Reinforcement Learning with General Value Function Approximation"
+title:  "Bellman Unbiasedness: Toward Provably Efficient Distributional Reinforcement Learning with General Value Function Approximation"
 date:   2024-07-10 20:21:59 +00:00
 image: images/statistical_functional.png
-categories: preprint
-author: "Seungyub Han"
-authors: "Taehyun Cho, <strong>Seungyub Han</strong>, Kyungjae Lee, Seokhun Ju, Dohyeong Kim, Jungwoo Lee"
-venue: 
-paper: 
+categories: International Conference
+author: "Taehyun Cho"
+authors: "<b>Taehyun Cho</b>, Seungyub Han, Kyungjae Lee, Seokhun Ju, Dohyeong Kim, Jungwoo Lee"
+venue: ICML 2025
+paper: https://arxiv.org/pdf/2407.21260
 arxiv: https://arxiv.org/abs/2407.21260
 slides: 
 code: 
