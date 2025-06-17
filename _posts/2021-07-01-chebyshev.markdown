@@ -5,7 +5,7 @@ date:   2021-07-01 20:21:59 +00:00
 image: images/chebyshev.png
 categories: International Conference
 author: "Sangwoo Hong"
-authors: "Heecheol Yang, Youngseok Yoon, <b>Taehyun Cho</b>, Jungwoo Lee"
+authors: "Sangwoo Hong, Heecheol Yang, Youngseok Yoon, <b>Taehyun Cho</b>, Jungwoo Lee"
 venue: ICML 2021
 paper: https://proceedings.mlr.press/v139/hong21b/hong21b.pdf
 arxiv: https://proceedings.mlr.press/v139/hong21b.html
