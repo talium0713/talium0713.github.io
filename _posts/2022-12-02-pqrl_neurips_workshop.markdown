@@ -5,7 +5,7 @@ date:   2022-12-03 22:21:59 +00:00
 image: images/pqr_neurips2022_workshop.png
 categories: International Conference
 author: "Taehyun Cho"
-authors: "<b>Taehyun Cho<\b>, Seungyub Han, Heesoo Lee, Kyungjae Lee, Jungwoo Lee"
+authors: "<b>Taehyun Cho</b>, Seungyub Han, Heesoo Lee, Kyungjae Lee, Jungwoo Lee"
 venue: "NeurIPS 2022 Deep RL Workshop"
 paper: https://openreview.net/forum?id=-WXCYvc5E-P
 slides: 
