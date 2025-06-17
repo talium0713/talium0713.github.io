@@ -3,7 +3,7 @@ layout: post
 title:  "An Efficient Neural Network Architecture for Rate Maximization in Energy Harvesting Downlink Channels"
 date:   2020-06-21 20:21:59 +00:00
 image: images/energy_harvesting.png
-categories: [International Journal]
+categories: ['International Journal']
 author: "Haesung Kim"
 authors: "Haesung Kim, <b>Taehyun Cho</b>, Jungwoo Lee, Wonjae Shin, H Vincent Poor"
 venue: 2020 IEEE International Symposium on Information Theory (ISIT)
