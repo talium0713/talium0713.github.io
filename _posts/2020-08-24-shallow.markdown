@@ -2,7 +2,7 @@
 layout: post
 title:  "Optimized shallow neural networks for sum-rate maximization in energy harvesting downlink multiuser NOMA systems"
 date:   2020-08-24 20:21:59 +00:00
-image: images/shallow.png
+image: images/shallow.PNG
 categories: ['International Journal']
 author: "Haesung Kim"
 authors: "Haesung Kim, <b>Taehyun Cho</b>, Jungwoo Lee, Wongae Shin, H Vincent Poor"
