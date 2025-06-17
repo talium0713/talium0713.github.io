@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "Optimized shallow neural networks for sum-rate maximization in energy harvesting downlink multiuser NOMA systems"
+date:   2020-08-24 20:21:59 +00:00
+image: images/shallow.png
+categories: International Journal
+author: "Haesung Kim"
+authors: "Haesung Kim, <b>Taehyun Cho</b>, Jungwoo Lee, Wongae Shin, H Vincent Poor"
+venue: IEEE Journal on Selected Areas in Communications
+paper: https://ieeexplore.ieee.org/abstract/document/9174757
+arxiv: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9174757
+slides: 
+code: 
+---
+This article considers a power allocation problem in energy harvesting downlink non-orthogonal multiple access (NOMA) systems in which a transmitter sends desired messages to their respective receivers by using harvested energy. 
+To tackle this problem, we make use of a reinforcement learning approach based on a shallow neural network structure.
