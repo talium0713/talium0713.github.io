@@ -3,7 +3,7 @@ layout: post
 title:  "Adaptive Methods for Nonconvex Continual Learning"
 date:   2022-12-03 22:21:59 +00:00
 image: images/nccl_opt_ml.png
-categories: International Conference
+categories: ['International Conference']
 author: "Seungyub Han"
 authors: "Seungyub Han, Yeongmo Kim, <b>Taehyun Cho</b>, Jungwoo Lee"
 venue: "NeurIPS 2022 Optimization for Machine Learning Workshop"

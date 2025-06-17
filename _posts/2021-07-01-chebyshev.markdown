@@ -3,7 +3,7 @@ layout: post
 title:  "Chebyshev polynomial codes: Task entanglement-based coding for distributed matrix multiplication"
 date:   2021-07-01 20:21:59 +00:00
 image: images/chebyshev.png
-categories: International Conference
+categories: ['International Conference']
 author: "Sangwoo Hong"
 authors: "Sangwoo Hong, Heecheol Yang, Youngseok Yoon, <b>Taehyun Cho</b>, Jungwoo Lee"
 venue: ICML 2021

@@ -53,7 +53,7 @@
               <h2>Research Interest</h2>
               <p>
               My academic research centers on <b>sequential decision-making under uncertainty</b>, particularly in the context of <b>human feedback</b>.
-              I have extensively studied distributional reinforcement learning, reinforcement learning from human feedback (RLHF), and regret analysis, aiming to bridge theory and practice.
+              I have extensively studied <b>distributional reinforcement learning (distRL)</b>, <b>reinforcement learning from human feedback (RLHF)</b>, and <b>regret analysis</b>, aiming to bridge theory and practice.
               Inspired by how humans make decisions, I seek to mathematically model and optimize human-in-the-loop systems, uncovering both theoretical insights and practical algorithms for robust decision-making.
               </p>
             </td>
@@ -134,31 +134,19 @@
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <h3>{{post.title}}</h3>
               <br>
-              <em>{{post.categories}} {{post.course}}</em>
-              <br>
-
+              {{post.authors}}
 
               <br>
-              {% if post.website %}
-              <a href="{{post.website}}">website</a> /
-              {% endif %}
+              <em>{{post.venue}}</em>
+              <br>
               {% if post.paper %}
               <a href="{{post.paper}}">paper</a> /
               {% endif %}
-              {% if post.patent %}
-              <a href="{{post.patent}}">patent</a> /
-              {% endif %}
-              {% if post.patent2 %}
-              <a href="{{post.patent2}}">patent #2</a> /
-              {% endif %}
-              {% if post.patent3 %}
-              <a href="{{post.patent3}}">patent #3</a> /
+              {% if post.arxiv %}
+              <a href="{{post.arxiv}}">arxiv</a> /
               {% endif %}
               {% if post.video %}
               <a href="{{post.video}}">video</a> /
-              {% endif %}
-              {% if post.video2 %}
-              <a href="{{post.video2}}">video #2</a> /
               {% endif %}
               {% if post.code %}
               <a href="{{post.code}}">code</a> /
@@ -200,30 +188,15 @@
               <br>
               {{post.authors}}
 
-              <br>
-              <em>{{post.venue}}</em>
 
-              <br>
-              {% if post.website %}
-              <a href="{{post.website}}">website</a> /
+              {% if post.paper %}
+              <a href="{{post.paper}}">paper</a> /
               {% endif %}
               {% if post.arxiv %}
               <a href="{{post.arxiv}}">arxiv</a> /
               {% endif %}
-              {% if post.patent %}
-              <a href="{{post.patent}}">patent</a> /
-              {% endif %}
-              {% if post.patent2 %}
-              <a href="{{post.patent2}}">patent #2</a> /
-              {% endif %}
-              {% if post.patent3 %}
-              <a href="{{post.patent3}}">patent #3</a> /
-              {% endif %}
               {% if post.video %}
               <a href="{{post.video}}">video</a> /
-              {% endif %}
-              {% if post.video2 %}
-              <a href="{{post.video2}}">video #2</a> /
               {% endif %}
               {% if post.code %}
               <a href="{{post.code}}">code</a> /

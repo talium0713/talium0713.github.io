@@ -3,7 +3,7 @@ layout: post
 title:  "SPQR: Controlling Q-ensemble Independence with Spiked Random Model for Reinforcement Learning"
 date:   2023-12-07 20:21:59 +00:00
 image: images/spqr.png
-categories: International Conference
+categories: ['International Conference']
 author: "Dohyeok Lee"
 authors: "Dohyeok Lee, Seungyub Han, <b>Taehyun Cho</b>, Jungwoo Lee"
 venue: "NeurIPS 2023"

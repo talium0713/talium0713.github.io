@@ -3,7 +3,7 @@ layout: post
 title:  "Bellman Unbiasedness: Toward Provably Efficient Distributional Reinforcement Learning with General Value Function Approximation"
 date:   2024-07-10 20:21:59 +00:00
 image: images/statistical_functional.png
-categories: International Conference
+categories: ['International Conference']
 author: "Taehyun Cho"
 authors: "<b>Taehyun Cho</b>, Seungyub Han, Kyungjae Lee, Seokhun Ju, Dohyeong Kim, Jungwoo Lee"
 venue: ICML 2025

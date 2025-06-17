@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "An Axiomatization of Process Score Model"
+date:   2025-06-17 20:21:59 +00:00
+image: images/PPL_img.png
+categories: ['Preprint']
+author: "Taehyun Cho"
+authors: "<b>Taehyun Cho</b>, Suhwan Kim, Seungyub Han, Seokhun Ju, Dohyeong Kim, Kyungjae Lee, Youngsoo Jang, Geonhyeong Kim, Yujin Kim, Moontae Lee, Jungwoo Lee"
+venue: 
+paper: TBC
+arxiv: 
+slides: 
+code: 
+---
