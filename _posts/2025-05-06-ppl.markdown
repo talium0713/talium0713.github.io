@@ -6,7 +6,7 @@ image: images/PPL_img.png
 categories: International Conference
 author: "Taehyun Cho"
 authors: "<b>Taehyun Cho</b>, Seokhun Ju, Seungyub Han, Dohyeong Kim, Kyungjae Lee, Jungwoo Lee"
-venue: ICML 2025
+venue: ICML 2025 <span style="color:red; font-weight:bold;">spotlight (Top 2.6%)</span>
 paper: https://arxiv.org/pdf/2407.21260
 arxiv: https://arxiv.org/abs/2407.21260
 slides: 
