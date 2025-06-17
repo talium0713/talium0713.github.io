@@ -3,9 +3,9 @@ layout: post
 title:  "Pitfall of Optimism: Distributional Reinforcement Learning by Randomizing Risk Criterion"
 date:   2023-12-07 22:21:59 +00:00
 image: images/pqr.png
-categories: research
+categories: International Conference
 author: "Taehyun Cho"
-authors: "Taehyun Cho, <strong>Seungyub Han</strong>, Heesoo Lee, Kyungjae Lee, Jungwoo Lee"
+authors: "<b>Taehyun Cho</b>, Seungyub Han, Heesoo Lee, Kyungjae Lee, Jungwoo Lee"
 venue: "NeurIPS 2023"
 paper: https://openreview.net/forum?id=v8u3EFAyW9
 arxiv: https://arxiv.org/abs/2310.16546
