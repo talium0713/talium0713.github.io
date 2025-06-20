@@ -10,8 +10,8 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet">
 </head>
 
-<body>
-  <table style="width:100%;max-width:800px;margin:auto;border-collapse:separate;border-spacing:0;">
+<body style="font-size: 18px;">
+  <table style="width:100%;max-width:1200px;margin:auto;border-collapse:separate;border-spacing:0;">
     <tr><td>
 
       <!-- Header -->
@@ -37,7 +37,7 @@
             </p>
           </td>
           <td style="padding:2.5%;width:40%;text-align:center">
-            <img style="width:70%;" src="images/img_cth.jpg" alt="profile photo">
+            <img style="width:70%;border-radius:50%;" src="images/img_cth.jpg" alt="profile photo">
           </td>
         </tr>
       </table>
@@ -82,7 +82,8 @@
                   {% if post.code %}<a href="{{ post.code }}">code</a> / {% endif %}
                   {% if post.poster %}<a href="{{ post.poster }}">poster</a> / {% endif %}
                   {% if post.slides %}<a href="{{ post.slides }}">slides</a> / {% endif %}
-                  <p>{{ post.excerpt }}</p>
+                  <!--post content-->
+                  <!--<p>{{ post.excerpt }}</p>-->
                 </td>
               </tr>
             {% endif %}
