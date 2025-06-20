@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "An Axiomatization of Process Score Model"
+title:  "An Axiomatization of Process Score Model: Your Process-level Feedback is Not a Reward"
 date:   2025-06-17 20:21:59 +00:00
 image: images/PLP3_example2.png
 categories: ['Preprint']
