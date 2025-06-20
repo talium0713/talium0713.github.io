@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Policy Optimization with Process Regret Model"
+date:   2025-06-17 19:21:59 +00:00
+image: 
+categories: ['Preprint']
+author: "Taehyun Cho"
+authors: "<b>Taehyun Cho*</b>, Suhwan Kim*, Seungyub Han, Seokhun Ju, Dohyeong Kim, Kyungjae Lee, Youngsoo Jang, Geonhyeong Kim, Yujin Kim, Moontae Lee, Jungwoo Lee"
+venue: Work In Progress
+paper: 
+arxiv: 
+slides: 
+code: 
+---
