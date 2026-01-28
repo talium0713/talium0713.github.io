@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "Policy Optimization with Process Regret Model"
-date:   2025-06-17 19:21:59 +00:00
+title:  "A Regret Minimization Framework on Preference Learning in Large Language Models"
+date:   2026-01-28 19:21:59 +00:00
 image: 
 categories: ['Preprint']
 author: "Taehyun Cho"
-authors: Suhwan Kim*, <b>Taehyun Cho*</b>,  Seungyub Han, Seokhun Ju, Dohyeong Kim, Kyungjae Lee, Youngsoo Jang, Geonhyeong Kim, Yujin Kim, Moontae Lee, Jungwoo Lee"
-venue: Work In Progress
+authors: Suhwan Kim*, <b>Taehyun Cho*</b>, Youngsoo Jang, Geonhyeong Kim, Yujin Kim, Moontae Lee, Jungwoo Lee"
+venue: Submitted to ICML 2026
 paper: 
 arxiv: 
 slides: 
