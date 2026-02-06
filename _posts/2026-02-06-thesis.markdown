@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "A Distributional Perspective on Human-Aligned Decision Making under Uncertainty"
+date:   2026-02-06 19:22:59 +00:00
+image: images/Thesis.png
+categories: ['Ph.D Dissertation']
+author: "Taehyun Cho"
+authors: 
+venue: Work In Progress
+paper: 
+arxiv: 
+slides: 
+code: 
+---

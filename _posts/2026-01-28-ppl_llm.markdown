@@ -2,7 +2,7 @@
 layout: post
 title:  "A Regret Minimization Framework on Preference Learning in Large Language Models"
 date:   2026-01-28 20:21:59 +00:00
-image: images/reward_regret_3.png
+image: images/reward_regret.png
 categories: ['Preprint']
 author: "Taehyun Cho"
 authors: "Suhwan Kim*, <b>Taehyun Cho*</b>, Youngsoo Jang, Geonhyeong Kim, Yujin Kim, Moontae Lee, Jungwoo Lee"
