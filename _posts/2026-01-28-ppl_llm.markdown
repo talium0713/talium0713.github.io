@@ -2,7 +2,7 @@
 layout: post
 title:  "A Regret Minimization Framework on Preference Learning in Large Language Models"
 date:   2026-01-28 20:21:59 +00:00
-image: images/reward_regret_3.pdf
+image: images/reward_regret_3.png
 categories: ['Preprint']
 author: "Taehyun Cho"
 authors: "Suhwan Kim*, <b>Taehyun Cho*</b>, Youngsoo Jang, Geonhyeong Kim, Yujin Kim, Moontae Lee, Jungwoo Lee"
@@ -12,3 +12,4 @@ arxiv:
 slides: 
 code: 
 ---
+RePO (Regret-based Preference Optimization) reframes RLHF as regret minimization rather than reward maximization. Motivated by the prospective and counterfactual nature of human feedback, RePO models preferences as behavior-conditioned assessments of relative suboptimality. It admits a closed-form update under KL-regularized RL and integrates seamlessly with direct preference optimization. Empirically, RePO achieves consistent gains on mathematical reasoning and human preference benchmarks, demonstrating a principled and effective alternative to reward-based RLHF.
