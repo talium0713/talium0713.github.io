@@ -5,8 +5,8 @@ date:   2026-02-06 19:22:59 +00:00
 image: images/Thesis.png
 categories: ['Ph.D Dissertation']
 author: "Taehyun Cho"
-authors: 
-venue: Work In Progress
+authors: "<b>Taehyun Cho*</b>"
+venue: Department of Electrical and Computer Engineering, Seoul National University
 paper: 
 arxiv: 
 slides: 
