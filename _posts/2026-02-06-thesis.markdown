@@ -2,8 +2,8 @@
 layout: post
 title:  "A Distributional Perspective on Human-Aligned Decision Making under Uncertainty"
 date:   2026-02-06 19:22:59 +00:00
-image: images/Thesis.png
-categories: ['International Conference']
+image: images/thesis.png
+categories: ['Dissertation']
 author: "Taehyun Cho"
 authors: "<b>Taehyun Cho*</b>"
 venue: Department of Electrical and Computer Engineering, Seoul National University
