@@ -7,7 +7,7 @@ categories: ['Dissertation']
 author: "Taehyun Cho"
 authors: "<b>Taehyun Cho*</b>"
 venue: Department of Electrical and Computer Engineering, Seoul National University
-paper: 
+paper: /pdfs/thesis.pdf
 arxiv: 
 slides: 
 code: 
