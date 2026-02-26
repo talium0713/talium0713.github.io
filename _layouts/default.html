@@ -45,7 +45,7 @@
       </table>
 
       <!-- Research Interest -->
-      <table style="width:100%;margin:auto;">
+      <table class="interest-section" style="width:100%;margin:auto;">
         <tr>
           <td style="padding:1.2% 1.2%;">
             <h2>Research Interest</h2>
@@ -60,7 +60,7 @@
               Currently, I’m interested in <b>reasoning LLM agents</b> and <b>regret-based decision theory</b>.
             </p>
             <p>
-              <b><span style="color:magenta;"> I’m actively looking for postdoctoral opportunities in theoretical foundations of reinforcement learning or reasoning LLM research.</span></b>
+              <b><span style="color:magenta;"> I’m actively looking for research scientist or postdoctoral opportunities in theoretical foundations of reinforcement learning or reasoning LLM research.</span></b>
             </p>
           </td>
         </tr>
@@ -68,13 +68,13 @@
 
       {% assign sections = "Preprint,Dissertation,International Conference,International Journal" | split: "," %}
       {% for section in sections %}
-        <table style="width:100%;margin:auto;">
+        <table class="section-header" style="width:100%;margin:auto;">
           <tr>
-            <td style="padding:1.2% 1.2%;"><h2>{{ section }}{% if section == 'Preprint' %}s{% endif %}</h2></td>
+            <td class="section-title-cell" style="padding:1.2% 1.2%;"><h2>{{ section }}{% if section == 'Preprint' %}s{% endif %}</h2></td>
           </tr>
         </table>
 
-        <table style="width:100%;margin:auto;border-collapse:separate;border-spacing:0;">
+        <table class="pub-table" style="width:100%;margin:auto;border-collapse:separate;border-spacing:0;">
           {% for post in site.posts %}
             {% if post.categories contains section %}
               <tr class="pub-row">

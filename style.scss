@@ -100,6 +100,72 @@ span.highlight {
   background-color: #ffffd0;
 }
 
+.section-title-cell {
+  padding-top: 14px !important;
+  padding-bottom: 10px !important;
+}
+
+.interest-section td {
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.pub-table {
+  border-collapse: separate !important;
+  border-spacing: 0 14px !important;
+}
+
+.pub-row td {
+  background: #ffffff;
+  border-top: 1px solid #e5ebf3;
+  border-bottom: 1px solid #e5ebf3;
+  transition: box-shadow .2s ease, transform .2s ease, border-color .2s ease;
+}
+
+.pub-row .pub-image-cell {
+  border-left: 1px solid #e5ebf3;
+  border-top-left-radius: 14px;
+  border-bottom-left-radius: 14px;
+  background: #f8fbff;
+}
+
+.pub-row .pub-text-cell {
+  border-right: 1px solid #e5ebf3;
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+
+.pub-row:hover td {
+  border-color: #d3deec;
+  box-shadow: 0 8px 20px rgba(21, 45, 78, 0.12);
+  transform: translateY(-1px);
+}
+
+.pub-image {
+  box-shadow: 0 2px 8px rgba(16, 24, 40, 0.08);
+}
+
+.pub-text-cell em {
+  color: #425166;
+}
+
+.pub-text-cell a {
+  display: inline-block;
+  margin-top: 6px;
+  margin-right: 6px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #eef5ff;
+  color: #155fba;
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.pub-text-cell a:hover {
+  background: #dcecff;
+  color: #0f4e99;
+}
+
 @media (max-width: 900px) {
   .page-wrap {
     max-width: 96% !important;
@@ -145,6 +211,22 @@ span.highlight {
     width: 100% !important;
     max-width: 100%;
     height: auto;
+  }
+
+  .pub-table {
+    border-spacing: 0 10px !important;
+  }
+
+  .pub-row .pub-image-cell,
+  .pub-row .pub-text-cell {
+    border-left: 1px solid #e5ebf3;
+    border-right: 1px solid #e5ebf3;
+    border-radius: 12px;
+  }
+
+  .pub-text-cell a {
+    margin-top: 8px;
+    margin-right: 8px;
   }
 }
 
