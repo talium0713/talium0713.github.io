@@ -30,19 +30,20 @@ tr,
 p,
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 1.45;
   font-display: auto;
 }
 
 strong {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-display: auto;
 }
 
 h2 {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 22px;
+  font-size: 30px;
   font-display: auto;
   font-weight: normal;
   padding: 0px;
@@ -52,7 +53,7 @@ h2 {
 
 h3 {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 22px;
   font-weight: 700;
   font-display: auto;
   padding: 0px;
@@ -97,6 +98,54 @@ h1 {
 
 span.highlight {
   background-color: #ffffd0;
+}
+
+@media (max-width: 900px) {
+  .page-wrap {
+    max-width: 96% !important;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .header-row,
+  .pub-row {
+    display: block;
+  }
+
+  .header-text,
+  .header-photo,
+  .pub-image-cell,
+  .pub-text-cell {
+    display: block;
+    width: 100% !important;
+    min-width: 0 !important;
+    padding: 2% 1% !important;
+  }
+
+  .header-photo {
+    text-align: center;
+  }
+
+  .profile-image {
+    width: 46% !important;
+    max-width: 220px !important;
+  }
+
+  .pub-image {
+    width: 100% !important;
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
