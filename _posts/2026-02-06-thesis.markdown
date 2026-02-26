@@ -7,8 +7,10 @@ categories: ['Dissertation']
 author: "Taehyun Cho"
 authors: "<b>Taehyun Cho*</b>"
 venue: Department of Electrical and Computer Engineering, Seoul National University
+award: "<span style='color:red;'>Ph.D dissertation received the Distingushed Dissertation Award</span>"
 paper: /pdfs/thesis.pdf
 arxiv: 
 slides: 
 code: 
 ---
+
