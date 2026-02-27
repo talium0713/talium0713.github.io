@@ -13,23 +13,9 @@
 <body style>
   <table style="width:100%;max-width:800px;margin:auto;border-collapse:separate;border-spacing:0;">
     <tr><td>
-      <table class="top-banner" style="width:100%;margin:auto;">
-        <tr>
-          <td style="padding:0 2.5% 10px 2.5%;">
-            <div class="top-banner-sticky">
-              <nav class="top-banner-nav">
-                <a href="#about-me">About Me</a>
-                <a href="#personal-interest">Personal Interest</a>
-                <a href="#publication">Publication</a>
-                <a href="#blog">Blog</a>
-              </nav>
-            </div>
-          </td>
-        </tr>
-      </table>
 
       <!-- Header -->
-      <table id="about-me" style="width:100%;margin:auto;">
+      <table style="width:100%;margin:auto;">
         <tr>
           <td style="padding:2.5%;width:60%;vertical-align:middle">
             <h1>Taehyun Cho</h1>
@@ -58,11 +44,11 @@
         </tr>
       </table>
 
-      <!-- Personal Interest -->
-      <table id="personal-interest" style="width:100%;margin:auto;">
+      <!-- Research Interest -->
+      <table style="width:100%;margin:auto;">
         <tr>
           <td style="padding:2.5%;">
-            <h2>Personal Interest</h2>
+            <h2>Research Interest</h2>
             <p>
               My academic research focuses on <b>sequential decision-making under uncertainty</b>, particularly in the context of <b>human feedback</b>. 
               I have extensively studied <b>distributional reinforcement learning (distRL)</b>, <b>reinforcement learning from human feedback (RLHF)</b>, and <b>regret analysis</b>, 
@@ -77,12 +63,6 @@
               <b> I’m actively looking for <span style="color:magenta;">research scientist</span> or <span style="color:magenta;">postdoctoral opportunities</span> in theoretical foundations of reinforcement learning or reasoning LLM research.</b>
             </p>
           </td>
-        </tr>
-      </table>
-
-      <table id="publication" style="width:100%;margin:auto;">
-        <tr>
-          <td style="padding:2.5%;"><h2>Publication</h2></td>
         </tr>
       </table>
 
@@ -102,7 +82,7 @@
                   <img src="/{{ post.image }}" alt="project image" style="max-width:100%;">
                 </td>
                 <td style="padding:2.5%;width:75%;vertical-align:middle;">
-                  <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3><br>
+                  <h3>{{ post.title }}</h3><br>
                   {{ post.authors }}<br>
                   <em>{{ post.venue }}</em><br>
                   {% if post.paper %}<a href="{{ post.paper }}">paper</a> / {% endif %}
@@ -120,35 +100,6 @@
         </table>
         <br><br>
       {% endfor %}
-
-      <table id="blog" style="width:100%;margin:auto;">
-        <tr>
-          <td style="padding:2.5%;"><h2>Blog</h2></td>
-        </tr>
-      </table>
-      <table class="blog-table" style="width:100%;margin:auto;border-collapse:separate;border-spacing:0;">
-        {% assign blog_posts = site.posts | where_exp: "post", "post.categories contains 'Blog'" %}
-        {% if blog_posts.size > 0 %}
-          {% for post in blog_posts %}
-            <tr class="blog-row">
-              <td style="padding:2.5%;">
-                <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3><br>
-                <em>{{ post.date | date: "%B %-d, %Y" }}</em>
-                {% if post.excerpt %}
-                  <p>{{ post.excerpt | strip_html | truncate: 180 }}</p>
-                {% endif %}
-              </td>
-            </tr>
-          {% endfor %}
-        {% else %}
-          <tr class="blog-empty-row">
-            <td style="padding:2.5%;">
-              <p>No blog posts yet. Add posts with <code>categories: ['Blog']</code> to show them here.</p>
-            </td>
-          </tr>
-        {% endif %}
-      </table>
-      <br><br>
 
       <!-- Footer -->
       <table style="width:100%;margin:auto;">
