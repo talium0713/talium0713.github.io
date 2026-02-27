@@ -11,13 +11,13 @@
 </head>
 
 <body style>
-  <table class="page-wrap" style="width:100%;max-width:1180px;margin:auto;border-collapse:separate;border-spacing:0;">
+  <table style="width:100%;max-width:800px;margin:auto;border-collapse:separate;border-spacing:0;">
     <tr><td>
 
       <!-- Header -->
       <table style="width:100%;margin:auto;">
-        <tr class="header-row">
-          <td class="header-text" style="padding:1.5% 1.2%;width:62%;vertical-align:middle">
+        <tr>
+          <td style="padding:2.5%;width:60%;vertical-align:middle">
             <h1>Taehyun Cho</h1>
             <p>
               I am a Ph.D. in Electrical and Computer Engineering from the 
@@ -38,16 +38,16 @@
               <a href="/pdfs/cv_cth.pdf">CV</a>
             </p>
           </td>
-          <td class="header-photo" style="padding:1.5% 1.2%;width:38%;text-align:center">
-            <img class="profile-image" style="width:78%;max-width:260px;border-radius:50%;" src="images/img_cth.jpg" alt="profile photo">
+          <td style="padding:2.5%;width:40%;text-align:center">
+            <img style="width:70%;border-radius:50%;" src="images/img_cth.jpg" alt="profile photo">
           </td>
         </tr>
       </table>
 
       <!-- Research Interest -->
-      <table class="interest-section" style="width:100%;margin:auto;">
+      <table style="width:100%;margin:auto;">
         <tr>
-          <td style="padding:1.2% 1.2%;">
+          <td style="padding:2.5%;">
             <h2>Research Interest</h2>
             <p>
               My academic research focuses on <b>sequential decision-making under uncertainty</b>, particularly in the context of <b>human feedback</b>. 
@@ -60,32 +60,31 @@
               Currently, I’m interested in <b>reasoning LLM agents</b> and <b>regret-based decision theory</b>.
             </p>
             <p>
-              <b><span style="color:magenta;"> I’m actively looking for research scientist or postdoctoral opportunities in theoretical foundations of reinforcement learning or reasoning LLM research.</span></b>
+              <b> I’m actively looking for <span style="color:magenta;">research scientist</span> or <span style="color:magenta;">postdoctoral opportunities</span> in theoretical foundations of reinforcement learning or reasoning LLM research.</b>
             </p>
           </td>
         </tr>
       </table>
 
-      {% assign sections = "Preprint,Dissertation,International Conference,International Journal" | split: "," %}
+      {% assign sections = "Preprint,International Conference,International Journal" | split: "," %}
       {% for section in sections %}
-        <table class="section-header" style="width:100%;margin:auto;">
+        <table style="width:100%;margin:auto;">
           <tr>
-            <td class="section-title-cell" style="padding:1.2% 1.2%;"><h2>{{ section }}{% if section == 'Preprint' %}s{% endif %}</h2></td>
+            <td style="padding:2.5%;"><h2>{{ section }}{% if section == 'Preprint' %}s{% endif %}</h2></td>
           </tr>
         </table>
 
-        <table class="pub-table" style="width:100%;margin:auto;border-collapse:separate;border-spacing:0;">
+        <table style="width:100%;margin:auto;border-collapse:separate;border-spacing:0;">
           {% for post in site.posts %}
             {% if post.categories contains section %}
-              <tr class="pub-row">
-                <td class="pub-image-cell" style="padding:1.2% 1.2%;width:34%;min-width:220px;vertical-align:middle;">
-                  <img class="pub-image" src="/{{ post.image }}" alt="project image" style="width:100%;height:auto;border-radius:8px;">
+              <tr>
+                <td style="padding:2.5%;width:25%;min-width:120px;vertical-align:middle;">
+                  <img src="/{{ post.image }}" alt="project image" style="max-width:100%;">
                 </td>
-                <td class="pub-text-cell" style="padding:1.2% 1.2%;width:66%;vertical-align:middle;">
+                <td style="padding:2.5%;width:75%;vertical-align:middle;">
                   <h3>{{ post.title }}</h3><br>
                   {{ post.authors }}<br>
                   <em>{{ post.venue }}</em><br>
-                  {% if post.award %}{{ post.award }}<br>{% endif %}
                   {% if post.paper %}<a href="{{ post.paper }}">paper</a> / {% endif %}
                   {% if post.arxiv %}<a href="{{ post.arxiv }}">arxiv</a> / {% endif %}
                   {% if post.video %}<a href="{{ post.video }}">video</a> / {% endif %}
@@ -99,7 +98,7 @@
             {% endif %}
           {% endfor %}
         </table>
-        <br>
+        <br><br>
       {% endfor %}
 
       <!-- Footer -->
