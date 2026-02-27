@@ -75,6 +75,50 @@ h1 {
 
 }
 
+.top-banner {
+  background: transparent;
+}
+
+.top-banner-sticky {
+  position: sticky;
+  top: 10px;
+  z-index: 30;
+}
+
+.top-banner-nav {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px 12px;
+  border: 1px solid #d9e4f1;
+  border-radius: 999px;
+  background: rgba(247, 251, 255, 0.97);
+  box-shadow: 0 8px 24px rgba(25, 47, 80, 0.12);
+  backdrop-filter: blur(4px);
+}
+
+.top-banner-nav a {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 14px;
+  color: #1f4f8f;
+  background: #eaf3ff;
+}
+
+.top-banner-nav a:hover {
+  background: #d7e8ff;
+  color: #173d70;
+}
+
+#about-me,
+#personal-interest,
+#publication,
+#blog {
+  scroll-margin-top: 90px;
+}
+
 .one {
   width: 160px;
   height: 160px;
@@ -166,6 +210,17 @@ span.highlight {
   color: #0f4e99;
 }
 
+.blog-row td,
+.blog-empty-row td {
+  border: 1px solid #e5ebf3;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.blog-row p {
+  margin-bottom: 0;
+}
+
 @media (max-width: 900px) {
   .page-wrap {
     max-width: 96% !important;
@@ -215,6 +270,17 @@ span.highlight {
 
   .pub-table {
     border-spacing: 0 10px !important;
+  }
+
+  .top-banner-nav {
+    gap: 8px;
+    border-radius: 14px;
+    box-shadow: 0 6px 16px rgba(25, 47, 80, 0.1);
+  }
+
+  .top-banner-nav a {
+    font-size: 13px;
+    padding: 6px 10px;
   }
 
   .pub-row .pub-image-cell,
