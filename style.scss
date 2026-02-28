@@ -12,6 +12,10 @@
 /**************/
 /* BASE RULES */
 /**************/
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   color: #1772d0;
   text-decoration: none;
@@ -73,6 +77,14 @@ h1 {
   margin-left: 0px;
   margin-right: 0px;
 
+}
+
+.site-title-link {
+  color: inherit;
+}
+
+.site-title-link:hover {
+  color: #1772d0;
 }
 
 .one {
@@ -147,13 +159,27 @@ span.highlight {
   width: 100%;
   height: auto;
   max-width: 100%;
-  transform: scale(1.12);
+  max-height: 130px;
+  object-fit: cover;
+  transform: scale(1.03);
   transform-origin: center center;
   box-shadow: 0 2px 8px rgba(16, 24, 40, 0.08);
 }
 
+.pub-text-cell h3 {
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+.pub-text-cell,
+.pub-text-cell p,
+.pub-text-cell a {
+  font-size: 15px;
+}
+
 .pub-text-cell em {
   color: #425166;
+  font-size: 15px;
 }
 
 .pub-text-cell a {
@@ -164,7 +190,7 @@ span.highlight {
   border-radius: 999px;
   background: #eef5ff;
   color: #155fba;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.35;
 }
 
@@ -218,7 +244,8 @@ span.highlight {
     width: 100% !important;
     max-width: 100%;
     height: auto;
-    transform: scale(1.04);
+    max-height: none;
+    transform: scale(1.01);
   }
 
   .pub-table {
