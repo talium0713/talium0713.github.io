@@ -99,9 +99,11 @@ h1 {
 
 .top-fixed-banner a,
 .top-fixed-banner a:visited {
+  font-family: 'Caveat', 'Lato', Verdana, Helvetica, sans-serif;
   color: #ffffff;
-  font-size: 24px;
+  font-size: 34px;
   font-weight: 700;
+  letter-spacing: 0.2px;
 }
 
 .top-fixed-banner a:hover,
@@ -162,10 +164,11 @@ span.highlight {
   border-left: 1px solid #e5ebf3;
   border-top-left-radius: 14px;
   border-bottom-left-radius: 14px;
-  background: #f8fbff;
+  background: #ffffff;
 }
 
 .pub-row .pub-text-cell {
+  background: #eef5ff;
   border-right: 1px solid #e5ebf3;
   border-top-right-radius: 14px;
   border-bottom-right-radius: 14px;
@@ -211,14 +214,15 @@ span.highlight {
   margin-right: 6px;
   padding: 2px 8px;
   border-radius: 999px;
-  background: #eef5ff;
+  background: #ffffff;
+  border: 1px solid #cfe0f6;
   color: #155fba;
   font-size: 15px;
   line-height: 1.35;
 }
 
 .pub-text-cell a:hover {
-  background: #dcecff;
+  background: #f7fbff;
   color: #0f4e99;
 }
 
@@ -238,7 +242,7 @@ span.highlight {
 
   .top-fixed-banner a,
   .top-fixed-banner a:visited {
-    font-size: 20px;
+    font-size: 28px;
   }
 
   h1 {
