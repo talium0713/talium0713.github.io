@@ -85,6 +85,8 @@ collections:
     output: false
   news:
     output: false
+  experiences:
+    output: false
 
 # Exclude these files from your production _site
 exclude:
