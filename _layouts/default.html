@@ -74,14 +74,14 @@
           </tr>
         </table>
 
-        <table style="width:100%;margin:auto;border-collapse:separate;border-spacing:0;">
+        <table class="pub-table" style="width:100%;margin:auto;border-collapse:separate;border-spacing:0;">
           {% for post in site.posts %}
             {% if post.categories contains section %}
-              <tr>
-                <td style="padding:2.5%;width:25%;min-width:120px;vertical-align:middle;">
-                  <img src="/{{ post.image }}" alt="project image" style="max-width:100%;">
+              <tr class="pub-row">
+                <td class="pub-image-cell" style="padding:2.5%;width:25%;min-width:120px;vertical-align:middle;">
+                  <img class="pub-image" src="/{{ post.image }}" alt="project image" style="max-width:100%;">
                 </td>
-                <td style="padding:2.5%;width:75%;vertical-align:middle;">
+                <td class="pub-text-cell" style="padding:2.5%;width:75%;vertical-align:middle;">
                   <h3>{{ post.title }}</h3><br>
                   {{ post.authors }}<br>
                   <em>{{ post.venue }}</em><br>
@@ -119,7 +119,6 @@
               </td>
               <td class="pub-text-cell" style="padding:2.5%;width:75%;vertical-align:middle;">
                 <h3>{{ project.title }}</h3><br>
-                {% if project.project_type %}{{ project.project_type }}<br>{% endif %}
                 {% if project.project_name %}{{ project.project_name }}<br>{% endif %}
                 {% if project.funder or project.duration %}
                   <em>
@@ -130,7 +129,6 @@
                   </em><br>
                 {% endif %}
                 {% if project.description %}{{ project.description }}<br>{% endif %}
-                {% if project.link %}<a href="{{ project.link }}">details</a>{% endif %}
               </td>
             </tr>
           {% endfor %}
