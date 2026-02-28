@@ -1,0 +1,74 @@
+<div id="roaming-character" class="roaming-character" aria-label="roaming penguin" title="Move me with arrow keys / WASD">
+  <div class="penguin-body">
+    <span class="penguin-belly"></span>
+    <span class="penguin-eye penguin-eye-left"></span>
+    <span class="penguin-eye penguin-eye-right"></span>
+    <span class="penguin-beak"></span>
+    <span class="penguin-foot penguin-foot-left"></span>
+    <span class="penguin-foot penguin-foot-right"></span>
+  </div>
+</div>
+<p class="character-hint">Use arrow keys / WASD to move the penguin. On mobile, drag it.</p>
+
+<script>
+  (function () {
+    const character = document.getElementById('roaming-character');
+    if (!character) return;
+
+    let x = 24;
+    let y = 24;
+    const speed = 16;
+
+    const clampPosition = () => {
+      const maxX = Math.max(0, window.innerWidth - character.offsetWidth - 8);
+      const maxY = Math.max(0, window.innerHeight - character.offsetHeight - 8);
+      x = Math.max(8, Math.min(x, maxX));
+      y = Math.max(8, Math.min(y, maxY));
+      character.style.transform = `translate(${x}px, ${y}px)`;
+    };
+
+    const moveBy = (dx, dy) => {
+      x += dx;
+      y += dy;
+      clampPosition();
+    };
+
+    window.addEventListener('resize', clampPosition);
+    clampPosition();
+
+    window.addEventListener('keydown', (e) => {
+      const key = e.key.toLowerCase();
+      if (['arrowup', 'arrowdown', 'arrowleft', 'arrowright', 'w', 'a', 's', 'd'].includes(key)) {
+        e.preventDefault();
+      }
+      if (key === 'arrowup' || key === 'w') moveBy(0, -speed);
+      if (key === 'arrowdown' || key === 's') moveBy(0, speed);
+      if (key === 'arrowleft' || key === 'a') moveBy(-speed, 0);
+      if (key === 'arrowright' || key === 'd') moveBy(speed, 0);
+    }, { passive: false });
+
+    let dragging = false;
+    let pointerOffsetX = 0;
+    let pointerOffsetY = 0;
+
+    const onPointerMove = (e) => {
+      if (!dragging) return;
+      x = e.clientX - pointerOffsetX;
+      y = e.clientY - pointerOffsetY;
+      clampPosition();
+    };
+
+    character.addEventListener('pointerdown', (e) => {
+      dragging = true;
+      character.setPointerCapture(e.pointerId);
+      pointerOffsetX = e.clientX - x;
+      pointerOffsetY = e.clientY - y;
+    });
+
+    character.addEventListener('pointerup', () => {
+      dragging = false;
+    });
+
+    window.addEventListener('pointermove', onPointerMove);
+  })();
+</script>

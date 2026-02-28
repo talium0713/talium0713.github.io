@@ -324,6 +324,105 @@ span.highlight {
   color: #0f4e99;
 }
 
+.roaming-character {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 62px;
+  height: 78px;
+  cursor: grab;
+  z-index: 1200;
+  touch-action: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.roaming-character:active {
+  cursor: grabbing;
+}
+
+.penguin-body {
+  position: relative;
+  width: 58px;
+  height: 72px;
+  border-radius: 45% 45% 42% 42%;
+  background: linear-gradient(180deg, #16253d 0%, #0a1526 100%);
+  border: 2px solid #ffffff;
+  box-shadow: 0 8px 18px rgba(20, 56, 104, 0.25);
+}
+
+.penguin-belly {
+  position: absolute;
+  left: 50%;
+  bottom: 6px;
+  transform: translateX(-50%);
+  width: 34px;
+  height: 42px;
+  border-radius: 45%;
+  background: #f4f9ff;
+}
+
+.penguin-eye {
+  position: absolute;
+  top: 22px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #ffffff;
+  z-index: 2;
+}
+
+.penguin-eye-left {
+  left: 20px;
+}
+
+.penguin-eye-right {
+  right: 20px;
+}
+
+.penguin-beak {
+  position: absolute;
+  left: 50%;
+  top: 30px;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 8px;
+  background: #f4a623;
+  border-radius: 50% 50% 60% 60%;
+  z-index: 2;
+}
+
+.penguin-foot {
+  position: absolute;
+  bottom: -2px;
+  width: 12px;
+  height: 8px;
+  background: #f4a623;
+  border-radius: 50% 50% 30% 30%;
+}
+
+.penguin-foot-left {
+  left: 16px;
+}
+
+.penguin-foot-right {
+  right: 16px;
+}
+
+.character-hint {
+  position: fixed;
+  left: 16px;
+  bottom: 10px;
+  font-size: 12px;
+  color: #39506f;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid #d8e2ef;
+  border-radius: 8px;
+  padding: 4px 8px;
+  z-index: 1100;
+}
+
 @media (max-width: 900px) {
   body {
     padding-top: 58px;
@@ -429,6 +528,12 @@ span.highlight {
   .pub-text-cell a {
     margin-top: 8px;
     margin-right: 8px;
+  }
+
+  .character-hint {
+    font-size: 11px;
+    left: 10px;
+    bottom: 8px;
   }
 }
 
