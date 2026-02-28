@@ -15,7 +15,7 @@
   <div class="top-fixed-banner">
     <a href="#top">Taehyun Cho</a>
   </div>
-  <input id="personal-interest-toggle" class="easter-toggle" type="checkbox">
+  {% include easter-toggle.html %}
 
   <table class="page-wrap" style="width:100%;max-width:1080px;margin:auto;border-collapse:separate;border-spacing:0;">
     <tr><td>
@@ -47,23 +47,13 @@
           <td style="padding:2.5%;width:40%;text-align:center">
             <div class="profile-easter">
               <img class="profile-image profile-image-main" src="images/img_cth.jpg" alt="profile photo">
-              <img class="profile-image profile-image-alt" src="images/challenger.png" alt="TFT challenger easter egg">
-              <label for="personal-interest-toggle" class="profile-click-easter">Click!</label>
+              {% include easter-profile-overlay.html %}
             </div>
           </td>
         </tr>
       </table>
 
-      <div class="personal-interest-easter">
-        <table style="width:100%;margin:auto;">
-          <tr>
-            <td style="padding:2.5%;">
-              <h2>Personal Interest</h2>
-              <p>I enjoy Teamfight Tactics (TFT), and I am pretty high-ranked.</p>
-            </td>
-          </tr>
-        </table>
-      </div>
+      {% include easter-personal-interest.html %}
 
       <!-- Research Interest -->
       <table style="width:100%;margin:auto;">

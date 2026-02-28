@@ -150,11 +150,11 @@ h1 {
 .profile-click-easter {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 75%;
   transform: translate(-50%, -50%);
   z-index: 2;
   font-family: 'Caveat', 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 34px;
+  font-size: 42px;
   font-weight: 700;
   color: #ffffff;
   background: rgba(0, 0, 0, 0.32);
@@ -380,7 +380,7 @@ span.highlight {
   }
 
   .profile-click-easter {
-    font-size: 28px;
+    font-size: 34px;
     padding: 5px 12px;
   }
 
