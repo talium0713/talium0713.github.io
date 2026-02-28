@@ -340,6 +340,7 @@ span.highlight {
 .experience-logo-cell {
   width: 170px;
   min-width: 170px;
+  text-align: center;
 }
 
 .experience-logo {
@@ -347,7 +348,8 @@ span.highlight {
   width: 120px;
   height: 76px;
   object-fit: contain;
-  object-position: left center;
+  object-position: center;
+  margin: 0 auto;
 }
 
 .experience-text-cell h3 {
