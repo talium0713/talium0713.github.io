@@ -14,7 +14,9 @@
 <body id="top" style>
   <div class="top-fixed-banner">
     <a href="#top">Taehyun Cho</a>
+    <label for="personal-interest-toggle" class="easter-trigger">Click!</label>
   </div>
+  <input id="personal-interest-toggle" class="easter-toggle" type="checkbox">
 
   <table class="page-wrap" style="width:100%;max-width:1080px;margin:auto;border-collapse:separate;border-spacing:0;">
     <tr><td>
@@ -44,10 +46,24 @@
             </p>
           </td>
           <td style="padding:2.5%;width:40%;text-align:center">
-            <img style="width:70%;border-radius:50%;" src="images/img_cth.jpg" alt="profile photo">
+            <div class="profile-easter">
+              <img class="profile-image profile-image-main" src="images/img_cth.jpg" alt="profile photo">
+              <img class="profile-image profile-image-alt" src="images/challenger.png" alt="TFT challenger easter egg">
+            </div>
           </td>
         </tr>
       </table>
+
+      <div class="personal-interest-easter">
+        <table style="width:100%;margin:auto;">
+          <tr>
+            <td style="padding:2.5%;">
+              <h2>Personal Interest</h2>
+              <p>I enjoy Teamfight Tactics (TFT), and I am pretty high-ranked.</p>
+            </td>
+          </tr>
+        </table>
+      </div>
 
       <!-- Research Interest -->
       <table style="width:100%;margin:auto;">
@@ -83,7 +99,7 @@
           {% for item in recent_news %}
             <tr class="news-row">
               <td style="padding:2.5%;">
-                <strong>{{ item.date | date: "%b %Y" }}</strong> - {{ item.title }}
+                <span class="news-date">{{ item.date | date: "%b %Y" }}</span> - {{ item.title }}
                 {% if item.description %}<br>{{ item.description }}{% endif %}
               </td>
             </tr>

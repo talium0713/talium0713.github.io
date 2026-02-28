@@ -95,6 +95,7 @@ h1 {
   align-items: center;
   padding: 0 20px;
   box-shadow: 0 2px 12px rgba(16, 24, 40, 0.18);
+  justify-content: space-between;
 }
 
 .top-fixed-banner a,
@@ -110,6 +111,60 @@ h1 {
 .top-fixed-banner a:focus {
   color: #ffffff;
   text-decoration: underline;
+}
+
+.easter-trigger {
+  font-family: 'Caveat', 'Lato', Verdana, Helvetica, sans-serif;
+  color: #ffffff !important;
+  font-size: 30px;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+}
+
+.easter-trigger:hover {
+  text-decoration: underline;
+}
+
+.easter-toggle {
+  display: none;
+}
+
+.profile-easter {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.profile-easter .profile-image {
+  width: 100%;
+  border-radius: 50%;
+  display: block;
+}
+
+.profile-image-alt {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity .25s ease-in-out;
+}
+
+.profile-easter:hover .profile-image-alt {
+  opacity: 1;
+}
+
+.personal-interest-easter {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transform: translateY(-8px);
+  transition: max-height .5s ease, opacity .35s ease, transform .35s ease;
+}
+
+.easter-toggle:checked ~ .page-wrap .personal-interest-easter {
+  max-height: 260px;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .one {
@@ -193,14 +248,20 @@ span.highlight {
 }
 
 .news-table {
-  border-collapse: separate !important;
-  border-spacing: 0 10px !important;
+  border-collapse: collapse !important;
+  border-spacing: 0 !important;
 }
 
 .news-row td {
-  background: #f7fbff;
-  border: 1px solid #d8e6f8;
-  border-radius: 12px;
+  border: none;
+  background: transparent;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+
+.news-date {
+  font-weight: 700;
+  color: #174f95;
 }
 
 .pub-text-cell h3 {
@@ -256,6 +317,10 @@ span.highlight {
     font-size: 28px;
   }
 
+  .easter-trigger {
+    font-size: 24px;
+  }
+
   h1 {
     font-size: 28px;
   }
@@ -290,6 +355,16 @@ span.highlight {
   .profile-image {
     width: 46% !important;
     max-width: 220px !important;
+  }
+
+  .profile-easter {
+    width: 46%;
+    max-width: 220px;
+  }
+
+  .profile-easter .profile-image {
+    width: 100% !important;
+    max-width: none !important;
   }
 
   .pub-image {
