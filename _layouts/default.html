@@ -189,12 +189,12 @@
         {% if experience_items.size > 0 %}
           {% for exp in experience_items %}
             <tr class="experience-row">
-              <td class="experience-logo-cell" style="padding:2.5%;vertical-align:middle;">
+              <td class="experience-logo-cell" style="padding:1.2% 2.5%;vertical-align:middle;">
                 {% if exp.image %}
                   <img class="experience-logo" src="/{{ exp.image }}" alt="{{ exp.title }} logo">
                 {% endif %}
               </td>
-              <td class="experience-text-cell" style="padding:2.5%;vertical-align:middle;">
+              <td class="experience-text-cell" style="padding:1.2% 2.5%;vertical-align:middle;">
                 <h3>{{ exp.title }}</h3><br>
                 {% if exp.role %}<strong>{{ exp.role }}</strong><br>{% endif %}
                 {% if exp.period %}<em>{{ exp.period }}</em>{% endif %}
