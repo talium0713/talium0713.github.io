@@ -357,6 +357,12 @@ span.highlight {
     display: block;
   }
 
+  .header-row {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .header-text,
   .header-photo,
   .pub-image-cell,
@@ -369,6 +375,9 @@ span.highlight {
 
   .header-photo {
     text-align: center;
+    order: -1;
+    padding-top: 0 !important;
+    padding-bottom: 2% !important;
   }
 
   .profile-image {
@@ -377,8 +386,8 @@ span.highlight {
   }
 
   .profile-easter {
-    width: 46%;
-    max-width: 220px;
+    width: 72%;
+    max-width: 320px;
   }
 
   .profile-easter .profile-image {
