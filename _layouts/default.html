@@ -11,14 +11,18 @@
 </head>
 
 <body id="top" style>
-  <table style="width:100%;max-width:800px;margin:auto;border-collapse:separate;border-spacing:0;">
+  <div class="top-fixed-banner">
+    <a href="#top">Taehyun Cho</a>
+  </div>
+
+  <table class="page-wrap" style="width:100%;max-width:1080px;margin:auto;border-collapse:separate;border-spacing:0;">
     <tr><td>
 
       <!-- Header -->
       <table style="width:100%;margin:auto;">
         <tr>
           <td style="padding:2.5%;width:60%;vertical-align:middle">
-            <h1><a class="site-title-link" href="#top">Taehyun Cho</a></h1>
+            <h1>Taehyun Cho</h1>
             <p>
               I am a Ph.D. in Electrical and Computer Engineering from the 
               <a href="https://cml.snu.ac.kr//">Cognitive Machine Learning Laboratory</a> at 
@@ -78,10 +82,10 @@
           {% for post in site.posts %}
             {% if post.categories contains section %}
               <tr class="pub-row">
-                <td class="pub-image-cell" style="padding:2.5%;width:22%;min-width:120px;vertical-align:middle;">
+                <td class="pub-image-cell" style="padding:2.5%;width:34%;min-width:240px;vertical-align:middle;">
                   <img class="pub-image" src="/{{ post.image }}" alt="project image">
                 </td>
-                <td class="pub-text-cell" style="padding:2.5%;width:78%;vertical-align:middle;">
+                <td class="pub-text-cell" style="padding:2.5%;width:66%;vertical-align:middle;">
                   <h3>{{ post.title }}</h3><br>
                   {{ post.authors }}<br>
                   <em>{{ post.venue }}</em><br>
@@ -112,12 +116,12 @@
         {% if project_items.size > 0 %}
           {% for project in project_items %}
             <tr class="pub-row">
-              <td class="pub-image-cell" style="padding:2.5%;width:22%;min-width:120px;vertical-align:middle;">
+              <td class="pub-image-cell" style="padding:2.5%;width:34%;min-width:240px;vertical-align:middle;">
                 {% if project.image %}
                   <img class="pub-image" src="/{{ project.image }}" alt="{{ project.title }}">
                 {% endif %}
               </td>
-              <td class="pub-text-cell" style="padding:2.5%;width:78%;vertical-align:middle;">
+              <td class="pub-text-cell" style="padding:2.5%;width:66%;vertical-align:middle;">
                 <h3>{{ project.title }}</h3><br>
                 {% if project.project_name %}{{ project.project_name }}<br>{% endif %}
                 {% if project.funder or project.duration %}
