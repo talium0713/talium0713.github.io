@@ -77,38 +77,6 @@
         </tr>
       </table>
 
-      <!-- Education & Research Experience -->
-      <table style="width:100%;margin:auto;">
-        <tr>
-          <td style="padding:2.5%;"><h2>Education &amp; Research Experience</h2></td>
-        </tr>
-      </table>
-      <table class="pub-table" style="width:100%;margin:auto;border-collapse:separate;border-spacing:0;">
-        {% assign experience_items = site.experiences | sort: "order" %}
-        {% if experience_items.size > 0 %}
-          {% for exp in experience_items %}
-            <tr class="pub-row">
-              <td class="pub-image-cell" style="padding:2.5%;width:34%;min-width:240px;vertical-align:middle;">
-                {% if exp.image %}
-                  <img class="pub-image" src="/{{ exp.image }}" alt="{{ exp.title }} logo">
-                {% endif %}
-              </td>
-              <td class="pub-text-cell" style="padding:2.5%;width:66%;vertical-align:middle;">
-                <h3>{{ exp.title }}</h3><br>
-                {% if exp.role %}<strong>{{ exp.role }}</strong><br>{% endif %}
-                {% if exp.period %}<em>{{ exp.period }}</em><br>{% endif %}
-                {% if exp.description %}{{ exp.description }}{% endif %}
-              </td>
-            </tr>
-          {% endfor %}
-        {% else %}
-          <tr>
-            <td style="padding:2.5%;">No experience entries added yet.</td>
-          </tr>
-        {% endif %}
-      </table>
-      <br><br>
-
       <!-- Recent News -->
       <table style="width:100%;margin:auto;">
         <tr>
@@ -205,6 +173,37 @@
             <td style="padding:2.5%;">
               No research projects added yet.
             </td>
+          </tr>
+        {% endif %}
+      </table>
+      <br><br>
+
+      <!-- Education & Research Experience -->
+      <table style="width:100%;margin:auto;">
+        <tr>
+          <td style="padding:2.5%;"><h2>Education &amp; Research Experience</h2></td>
+        </tr>
+      </table>
+      <table class="experience-table" style="width:100%;margin:auto;border-collapse:collapse;">
+        {% assign experience_items = site.experiences | sort: "order" %}
+        {% if experience_items.size > 0 %}
+          {% for exp in experience_items %}
+            <tr class="experience-row">
+              <td class="experience-logo-cell" style="padding:2.5%;vertical-align:middle;">
+                {% if exp.image %}
+                  <img class="experience-logo" src="/{{ exp.image }}" alt="{{ exp.title }} logo">
+                {% endif %}
+              </td>
+              <td class="experience-text-cell" style="padding:2.5%;vertical-align:middle;">
+                <h3>{{ exp.title }}</h3><br>
+                {% if exp.role %}<strong>{{ exp.role }}</strong><br>{% endif %}
+                {% if exp.period %}<em>{{ exp.period }}</em>{% endif %}
+              </td>
+            </tr>
+          {% endfor %}
+        {% else %}
+          <tr>
+            <td style="padding:2.5%;">No experience entries added yet.</td>
           </tr>
         {% endif %}
       </table>
