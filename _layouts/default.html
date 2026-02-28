@@ -101,6 +101,49 @@
         <br><br>
       {% endfor %}
 
+      <!-- Research Projects -->
+      <table style="width:100%;margin:auto;">
+        <tr>
+          <td style="padding:2.5%;"><h2>Research Projects</h2></td>
+        </tr>
+      </table>
+      <table class="pub-table" style="width:100%;margin:auto;border-collapse:separate;border-spacing:0;">
+        {% assign project_items = site.projects | sort: "date" | reverse %}
+        {% if project_items.size > 0 %}
+          {% for project in project_items %}
+            <tr class="pub-row">
+              <td class="pub-image-cell" style="padding:2.5%;width:25%;min-width:120px;vertical-align:middle;">
+                {% if project.image %}
+                  <img class="pub-image" src="/{{ project.image }}" alt="{{ project.title }}" style="max-width:100%;">
+                {% endif %}
+              </td>
+              <td class="pub-text-cell" style="padding:2.5%;width:75%;vertical-align:middle;">
+                <h3>{{ project.title }}</h3><br>
+                {% if project.project_type %}{{ project.project_type }}<br>{% endif %}
+                {% if project.project_name %}{{ project.project_name }}<br>{% endif %}
+                {% if project.funder or project.duration %}
+                  <em>
+                    {% if project.funder %}Funded by {{ project.funder }}{% endif %}
+                    {% if project.funder and project.duration %} ({% endif %}
+                    {% if project.duration %}{{ project.duration }}{% endif %}
+                    {% if project.funder and project.duration %}){% endif %}
+                  </em><br>
+                {% endif %}
+                {% if project.description %}{{ project.description }}<br>{% endif %}
+                {% if project.link %}<a href="{{ project.link }}">details</a>{% endif %}
+              </td>
+            </tr>
+          {% endfor %}
+        {% else %}
+          <tr>
+            <td style="padding:2.5%;">
+              No research projects added yet.
+            </td>
+          </tr>
+        {% endif %}
+      </table>
+      <br><br>
+
       <!-- Footer -->
       <table style="width:100%;margin:auto;">
         <tr>
