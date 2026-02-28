@@ -71,6 +71,31 @@
         </tr>
       </table>
 
+      <!-- Recent News -->
+      <table style="width:100%;margin:auto;">
+        <tr>
+          <td style="padding:2.5%;"><h2>Recent News</h2></td>
+        </tr>
+      </table>
+      <table class="news-table" style="width:100%;margin:auto;border-collapse:separate;border-spacing:0;">
+        {% assign recent_news = site.news | sort: "date" | reverse %}
+        {% if recent_news.size > 0 %}
+          {% for item in recent_news %}
+            <tr class="news-row">
+              <td style="padding:2.5%;">
+                <strong>{{ item.date | date: "%b %Y" }}</strong> - {{ item.title }}
+                {% if item.description %}<br>{{ item.description }}{% endif %}
+              </td>
+            </tr>
+          {% endfor %}
+        {% else %}
+          <tr class="news-row">
+            <td style="padding:2.5%;">No recent news added yet.</td>
+          </tr>
+        {% endif %}
+      </table>
+      <br><br>
+
       {% assign sections = "Dissertation,Preprint,International Conference,International Journal" | split: "," %}
       {% for section in sections %}
         <table style="width:100%;margin:auto;">

@@ -189,7 +189,18 @@ span.highlight {
   object-fit: cover;
   transform: scale(1.02);
   transform-origin: center center;
-  box-shadow: 0 2px 8px rgba(16, 24, 40, 0.08);
+  box-shadow: none;
+}
+
+.news-table {
+  border-collapse: separate !important;
+  border-spacing: 0 10px !important;
+}
+
+.news-row td {
+  background: #f7fbff;
+  border: 1px solid #d8e6f8;
+  border-radius: 12px;
 }
 
 .pub-text-cell h3 {
