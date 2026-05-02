@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Pareto Optimal Risk-Agnostic Distributional Bandits with Heavy-Tail Rewards"
+date:   2025-12-10 20:21:59 +00:00
+image: images/pareto.png
+categories: ['International Conference']
+author: "Kyungjae Lee"
+authors: "Kyungjae Lee, Dohyeong Kim, <b>Taehyun Cho</b>, Chaeyeon Kim, Yunkyung Ko, Seungyub Han, Seokhun Ju, Dohyeok Lee, Sungbin Lim"
+venue: "NeurIPS 2025"
+paper:
+arxiv:
+slides:
+code:
+---

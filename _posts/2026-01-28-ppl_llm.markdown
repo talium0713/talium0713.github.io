@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "A Regret Minimization Framework on Preference Learning in Large Language Models"
-date:   2026-01-28 20:21:59 +00:00
+date:   2026-01-28 20:22:59 +00:00
 image: images/reward_regret.png
 categories: ['International Conference']
 author: "Taehyun Cho"

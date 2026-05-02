@@ -1,0 +1,4 @@
+---
+title: "Our paper <b>MVP-LAM: Learning Action-Centric Latent Action via Cross-Viewpoint Reconstruction</b> was accepted at <b style='color:magenta;'>ICML 2026</b>."
+date: 2026-05-02 00:00:00 +09:00
+---
