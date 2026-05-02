@@ -7,8 +7,8 @@ categories: ['International Conference']
 author: "Kyungjae Lee"
 authors: "Kyungjae Lee, Dohyeong Kim, <b>Taehyun Cho</b>, Chaeyeon Kim, Yunkyung Ko, Seungyub Han, Seokhun Ju, Dohyeok Lee, Sungbin Lim"
 venue: "NeurIPS 2025"
-paper:
-arxiv:
+paper: https://openreview.net/forum?id=q8oLLyA34Q
+arxiv: 
 slides:
 code:
 ---
