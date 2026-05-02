@@ -3,10 +3,10 @@ layout: post
 title:  "A Regret Minimization Framework on Preference Learning in Large Language Models"
 date:   2026-01-28 20:21:59 +00:00
 image: images/reward_regret.png
-categories: ['Preprint']
+categories: ['International Conference']
 author: "Taehyun Cho"
-authors: "Suhwan Kim*, <b>Taehyun Cho*</b>, Youngsoo Jang, Geonhyeong Kim, Yujin Kim, Moontae Lee, Jungwoo Lee"
-venue: Submitted to ICML 2026
+authors: "Suhwan Kim*, <b>Taehyun Cho*</b>, Geonhyeong Kim, Yujin Kim, Youngsoo Jang, Moontae Lee, Jungwoo Lee"
+venue: ICML 2026 <span style="color:magenta; font-weight:bold;">Spotlight (Top 2.2%)</span>
 paper: 
 arxiv: 
 slides: 
