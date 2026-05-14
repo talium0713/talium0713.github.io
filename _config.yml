@@ -87,6 +87,10 @@ collections:
     output: false
   experiences:
     output: false
+  awards:
+    output: false
+  talks:
+    output: false
 
 # Exclude these files from your production _site
 exclude:
