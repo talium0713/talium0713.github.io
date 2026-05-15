@@ -25,6 +25,7 @@
         <tr class="header-row">
           <td class="header-text" style="padding:2.5%;width:60%;vertical-align:middle">
             <h1>Taehyun Cho</h1>
+            <span class="header-tagline">AI Researcher &nbsp;&bull;&nbsp; Reinforcement Learning &amp; Decision Theory</span>
             <p>
               I received my Ph.D. in Electrical and Computer Engineering from the
               <a href="https://cml.snu.ac.kr//">Cognitive Machine Learning Laboratory</a> at
@@ -55,57 +56,65 @@
       {% include easter-personal-interest.html %}
 
       <!-- Research Interest -->
-      <table style="width:100%;margin:auto;">
+      <table class="text-narrow" style="width:100%;margin:auto;">
         <tr>
-          <td style="padding:2.5% 2.5% 1.4% 2.5%;">
+          <td class="section-header-cell">
             <h2>Research Interest</h2>
+          </td>
+        </tr>
+        <tr>
+          <td class="section-body-cell">
             <p>
-              My academic research focuses on <b>sequential decision-making under uncertainty</b>, particularly in the context of <b>human feedback</b>. 
-              I have extensively studied <b>distributional reinforcement learning (distRL)</b>, <b>reinforcement learning from human feedback (RLHF)</b>, and <b>regret analysis</b>, 
+              My research focuses on <b>sequential decision-making under uncertainty</b>, particularly in the context of <b>human feedback</b>.
+              I have extensively studied <b>distributional reinforcement learning (DistRL)</b>, <b>reinforcement learning from human feedback (RLHF)</b>, and <b>regret analysis</b>,
               aiming to bridge theory and practice.
             </p>
             <p>
-              Drawing inspiration from how humans make decisions, I aim to develop mathematical models and optimize for human-in-the-loop systems, 
-              uncovering both theoretical insights and practical algorithms for robust decision-making.
+              My long-term goal is to build <b>human-aligned, socially-aware agents</b> &mdash; systems that reason about people and act on their preferences, values, and decisions.
+              I draw inspiration from how humans make decisions: by seeking to understand the cognitive mechanisms underlying human choice and mathematically modeling the structure that governs interaction,
+              I aim to develop both theoretical insights and practical algorithms for robust decision-making under uncertainty.
+            </p>
+            <p>
               Currently, I’m interested in <b>reasoning LLM agents</b> and <b>regret-based decision theory</b>.
             </p>
             <p>
-              <b> I’m actively looking for <span style="color:magenta;">research scientist</span> or <span style="color:magenta;">postdoctoral opportunities</span> in theoretical foundations of reinforcement learning or reasoning LLM research.</b>
+              <b>I’m actively looking for <span style="color:#b41e6e;">research scientist</span> or <span style="color:#b41e6e;">postdoctoral opportunities</span> in theoretical foundations of reinforcement learning or reasoning LLM research.</b>
             </p>
           </td>
         </tr>
       </table>
+      <div class="section-spacer"></div>
 
       <!-- Recent News -->
-      <table style="width:100%;margin:auto;">
+      <table class="text-narrow" style="width:100%;margin:auto;">
         <tr>
-          <td style="padding:2.5% 2.5% 1.2% 2.5%;"><h2>Recent News</h2></td>
+          <td class="section-header-cell"><h2>Recent News</h2></td>
         </tr>
       </table>
-      <table class="news-table" style="width:100%;margin:auto;border-collapse:separate;border-spacing:0;">
+      <table class="news-table text-narrow" style="width:100%;margin:auto;border-collapse:separate;border-spacing:0;">
         {% assign recent_news = site.news | sort: "date" | reverse %}
         {% if recent_news.size > 0 %}
           {% for item in recent_news %}
             <tr class="news-row">
-              <td style="padding:2.5%;">
-                <span class="news-date">{{ item.date | date: "%b %Y" }}</span> - {{ item.title }}
+              <td style="padding:8px 24px;">
+                <span class="news-date">{{ item.date | date: "%b %Y" }}</span> &mdash; {{ item.title }}
                 {% if item.description %}<br>{{ item.description }}{% endif %}
               </td>
             </tr>
           {% endfor %}
         {% else %}
           <tr class="news-row">
-            <td style="padding:2.5%;">No recent news added yet.</td>
+            <td style="padding:8px 24px;">No recent news added yet.</td>
           </tr>
         {% endif %}
       </table>
-      <br><br>
+      <div class="section-spacer"></div>
 
       {% assign sections = "Dissertation,Preprint,International Conference,International Journal" | split: "," %}
       {% for section in sections %}
         <table style="width:100%;margin:auto;">
           <tr>
-            <td style="padding:2.5% 2.5% 1.2% 2.5%;"><h2>{{ section }}{% if section == 'Preprint' %}s{% endif %}</h2></td>
+            <td class="section-header-cell"><h2>{{ section }}{% if section == 'Preprint' %}s{% endif %}</h2></td>
           </tr>
         </table>
 
@@ -133,13 +142,13 @@
             {% endif %}
           {% endfor %}
         </table>
-        <br><br>
+        <div class="section-spacer"></div>
       {% endfor %}
 
       <!-- Research Projects -->
       <table style="width:100%;margin:auto;">
         <tr>
-          <td style="padding:2.5% 2.5% 1.2% 2.5%;"><h2>Research Projects</h2></td>
+          <td class="section-header-cell"><h2>Research Projects</h2></td>
         </tr>
       </table>
       <table class="pub-table" style="width:100%;margin:auto;border-collapse:separate;border-spacing:0;">
@@ -175,12 +184,12 @@
           </tr>
         {% endif %}
       </table>
-      <br><br>
+      <div class="section-spacer"></div>
 
       <!-- Education & Research Experience -->
       <table style="width:100%;margin:auto;">
         <tr>
-          <td style="padding:2.5% 2.5% 1.2% 2.5%;"><h2>Education &amp; Research Experience</h2></td>
+          <td class="section-header-cell"><h2>Education &amp; Research Experience</h2></td>
         </tr>
       </table>
       <table class="experience-table" style="width:100%;margin:auto;border-collapse:collapse;">
@@ -206,67 +215,67 @@
           </tr>
         {% endif %}
       </table>
-      <br><br>
+      <div class="section-spacer"></div>
 
       <!-- Awards & Honors -->
-      <table style="width:100%;margin:auto;">
+      <table class="text-narrow" style="width:100%;margin:auto;">
         <tr>
-          <td style="padding:2.5% 2.5% 1.2% 2.5%;"><h2>Awards &amp; Honors</h2></td>
+          <td class="section-header-cell"><h2>Awards &amp; Honors</h2></td>
         </tr>
       </table>
-      <table class="news-table" style="width:100%;margin:auto;border-collapse:separate;border-spacing:0;">
+      <table class="news-table text-narrow" style="width:100%;margin:auto;border-collapse:separate;border-spacing:0;">
         {% assign award_items = site.awards | sort: "date" | reverse %}
         {% if award_items.size > 0 %}
           {% for item in award_items %}
             <tr class="news-row">
-              <td style="padding:2.5%;">
-                <span class="news-date">{{ item.period | default: item.date | date: "%b %Y" }}</span> - <strong>{{ item.title }}</strong>
+              <td style="padding:8px 24px;">
+                <span class="news-date">{{ item.period | default: item.date | date: "%b %Y" }}</span> &mdash; <strong>{{ item.title }}</strong>
                 {% if item.organization %}<br><em>{{ item.organization }}</em>{% endif %}
               </td>
             </tr>
           {% endfor %}
         {% else %}
           <tr class="news-row">
-            <td style="padding:2.5%;">No awards added yet.</td>
+            <td style="padding:8px 24px;">No awards added yet.</td>
           </tr>
         {% endif %}
       </table>
-      <br><br>
+      <div class="section-spacer"></div>
 
       <!-- Talks -->
-      <table style="width:100%;margin:auto;">
+      <table class="text-narrow" style="width:100%;margin:auto;">
         <tr>
-          <td style="padding:2.5% 2.5% 1.2% 2.5%;"><h2>Talks</h2></td>
+          <td class="section-header-cell"><h2>Talks</h2></td>
         </tr>
       </table>
-      <table class="news-table" style="width:100%;margin:auto;border-collapse:separate;border-spacing:0;">
+      <table class="news-table text-narrow" style="width:100%;margin:auto;border-collapse:separate;border-spacing:0;">
         {% assign talk_items = site.talks | sort: "date" | reverse %}
         {% if talk_items.size > 0 %}
           {% for item in talk_items %}
             <tr class="news-row">
-              <td style="padding:2.5%;">
-                <span class="news-date">{{ item.period | default: item.date | date: "%b %Y" }}</span> - <strong>{{ item.event }}</strong>{% if item.venue %}, <em>{{ item.venue }}</em>{% endif %}
+              <td style="padding:8px 24px;">
+                <span class="news-date">{{ item.period | default: item.date | date: "%b %Y" }}</span> &mdash; <strong>{{ item.event }}</strong>{% if item.venue %}, <em>{{ item.venue }}</em>{% endif %}
                 {% if item.title %}<br>{{ item.title }}{% endif %}
               </td>
             </tr>
           {% endfor %}
         {% else %}
           <tr class="news-row">
-            <td style="padding:2.5%;">No talks added yet.</td>
+            <td style="padding:8px 24px;">No talks added yet.</td>
           </tr>
         {% endif %}
       </table>
-      <br><br>
+      <div class="section-spacer"></div>
 
       <!-- Academic Services -->
-      <table style="width:100%;margin:auto;">
+      <table class="text-narrow" style="width:100%;margin:auto;">
         <tr>
-          <td style="padding:2.5% 2.5% 1.2% 2.5%;"><h2>Academic Services</h2></td>
+          <td class="section-header-cell"><h2>Academic Services</h2></td>
         </tr>
       </table>
-      <table style="width:100%;margin:auto;">
+      <table class="text-narrow" style="width:100%;margin:auto;">
         <tr>
-          <td style="padding:2.5%;">
+          <td class="section-body-cell">
             <strong>Conference Reviewer</strong>
             <ul>
               <li>International Conference on Machine Learning (ICML) 2022 – 2026
@@ -287,7 +296,7 @@
           </td>
         </tr>
       </table>
-      <br><br>
+      <div class="section-spacer"></div>
 
       <!-- Footer -->
       <table style="width:100%;margin:auto;">
