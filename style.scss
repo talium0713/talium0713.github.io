@@ -103,8 +103,8 @@ h1 {
 
 .text-narrow {
   max-width: 780px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0 !important;
+  margin-right: auto !important;
 }
 
 .section-header-cell {
