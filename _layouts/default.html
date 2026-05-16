@@ -27,10 +27,11 @@
             <h1>Taehyun Cho</h1>
             <span class="header-tagline">AI Researcher &nbsp;&bull;&nbsp; Reinforcement Learning &amp; Decision Theory</span>
             <p>
-              I received my Ph.D. in Electrical and Computer Engineering from the
-              <a href="https://cml.snu.ac.kr//">Cognitive Machine Learning Laboratory</a> at
-              <a href="https://ece.snu.ac.kr/">Seoul National University</a>, advised by
-              <a href="https://cml.snu.ac.kr/?page_id=5948">Jungwoo Lee</a>, and I am currently a Postdoctoral Researcher.
+              I am currently a Postdoctoral Researcher at the
+              <a href="https://cml.snu.ac.kr//">Cognitive Machine Learning Laboratory</a>,
+              <a href="https://ece.snu.ac.kr/">Seoul National University</a>.
+              I received my Ph.D. in Electrical and Computer Engineering from the same lab,
+              advised by <a href="https://cml.snu.ac.kr/?page_id=5948">Jungwoo Lee</a>.
               My research focuses on reinforcement learning, human-aligned sequential decision-making, and uncertainty-aware learning.
               I received my B.S. in Mathematics from <a href="https://math.korea.ac.kr">Korea University</a>.
             </p>
@@ -56,7 +57,7 @@
       {% include easter-personal-interest.html %}
 
       <!-- Research Interest -->
-      <table class="text-narrow" style="width:100%;margin:auto;">
+      <table class="text-wide" style="width:100%;margin:auto;">
         <tr>
           <td class="section-header-cell">
             <h2>Research Interest</h2>
@@ -65,33 +66,33 @@
         <tr>
           <td class="section-body-cell">
             <p>
-              My research focuses on <b>sequential decision-making under uncertainty</b>, particularly in the context of <b>human feedback</b>.
+              My research focuses on <b><span style="color:magenta;">sequential decision-making under uncertainty</span></b>, particularly in the context of <b>human feedback</b>.
               I have extensively studied <b>distributional reinforcement learning (DistRL)</b>, <b>reinforcement learning from human feedback (RLHF)</b>, and <b>regret analysis</b>,
               aiming to bridge theory and practice.
             </p>
             <p>
-              My long-term goal is to build <b>human-aligned, socially-aware agents</b> &mdash; systems that reason about people and act on their preferences, values, and decisions.
+              My long-term goal is to build <b><span style="color:magenta;">human-aligned, socially-aware agents</span></b> &mdash; systems that reason about people and act on their preferences, values, and decisions.
               I draw inspiration from how humans make decisions: by seeking to understand the cognitive mechanisms underlying human choice and mathematically modeling the structure that governs interaction,
               I aim to develop both theoretical insights and practical algorithms for robust decision-making under uncertainty.
             </p>
             <p>
               Currently, I’m interested in <b>reasoning LLM agents</b> and <b>regret-based decision theory</b>.
             </p>
-            <p>
+            <!-- <p>
               <b>I’m actively looking for <span style="color:magenta;">research scientist</span> or <span style="color:magenta;">postdoctoral opportunities</span> in theoretical foundations of reinforcement learning or reasoning LLM research.</b>
-            </p>
+            </p> -->
           </td>
         </tr>
       </table>
       <div class="section-spacer"></div>
 
       <!-- Recent News -->
-      <table class="text-narrow" style="width:100%;margin:auto;">
+      <table class="text-wide" style="width:100%;margin:auto;">
         <tr>
           <td class="section-header-cell"><h2>Recent News</h2></td>
         </tr>
       </table>
-      <table class="news-table text-narrow" style="width:100%;margin:auto;border-collapse:separate;border-spacing:0;">
+      <table class="news-table text-wide" style="width:100%;margin:auto;border-collapse:separate;border-spacing:0;">
         {% assign recent_news = site.news | sort: "date" | reverse %}
         {% if recent_news.size > 0 %}
           {% for item in recent_news %}
@@ -279,7 +280,7 @@
             <strong>Conference Reviewer</strong>
             <ul>
               <li>International Conference on Machine Learning (ICML) 2022 – 2026
-                <ul><li><b>Gold Reviewer Award</b> (Top 25%)</li></ul>
+                <ul><li>Gold Reviewer Award (Top 25%)</li></ul>
               </li>
               <li>Neural Information Processing Systems (NeurIPS) 2022 – 2025</li>
               <li>International Conference on Learning Representations (ICLR) 2023 – 2025</li>
