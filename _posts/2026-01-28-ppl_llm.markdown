@@ -6,10 +6,11 @@ image: images/reward_regret.png
 categories: ['International Conference']
 author: "Taehyun Cho"
 authors: "Suhwan Kim*, <b>Taehyun Cho*</b>, Geonhyeong Kim, Yujin Kim, Youngsoo Jang, Moontae Lee, Jungwoo Lee"
-venue: ICML 2026 <span style="color:magenta; font-weight:bold;">Spotlight (Top 2.2%)</span>
-paper: 
-arxiv: 
-slides: 
-code: 
+venue: ICML 2026 <span style="color:#EC008D; font-weight:bold;">Spotlight (Top 2.2%)</span>
+project: https://saramal.github.io/RePO-regret-based-rlhf/
+paper: https://saramal.github.io/RePO-regret-based-rlhf/static/pdfs/Regret_based_RLHF_20260520.pdf
+arxiv:
+slides:
+code:
 ---
 RePO (Regret-based Preference Optimization) reframes RLHF as regret minimization rather than reward maximization. Motivated by the prospective and counterfactual nature of human feedback, RePO models preferences as behavior-conditioned assessments of relative suboptimality. It admits a closed-form update under KL-regularized RL and integrates seamlessly with direct preference optimization. Empirically, RePO achieves consistent gains on mathematical reasoning and human preference benchmarks, demonstrating a principled and effective alternative to reward-based RLHF.

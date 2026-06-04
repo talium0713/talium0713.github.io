@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Probabilistic Smoothing with Ratio-Monotone Transforms for Global Optimization"
-date:   2026-05-02 20:21:59 +00:00
+date:   2026-06-04 20:22:00 +00:00
 image: images/Smoothing.png
 categories: ['Preprint']
 author: "Kukyoung Jang"

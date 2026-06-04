@@ -27,13 +27,16 @@
             <h1>Taehyun Cho</h1>
             <span class="header-tagline">AI Researcher &nbsp;&bull;&nbsp; Reinforcement Learning &amp; Decision Theory</span>
             <p>
-              I am currently a Postdoctoral Researcher at the
+              Starting August 2026, I will join the
+              <a href="https://vectorinstitute.ai/">Vector Institute</a> (Vector Distinguished Postdoctoral Fellowship) and the
+              <a href="http://www.fields.utoronto.ca/">Fields Institute</a> (Principles of Intelligence Fellowship),
+              hosted by Prof. Tim G. J. Rudner at the University of Toronto.
+              
+              I am currently a postdoctoral fellow at the
               <a href="https://cml.snu.ac.kr//">Cognitive Machine Learning Laboratory</a>,
-              <a href="https://ece.snu.ac.kr/">Seoul National University</a>.
-              I received my Ph.D. in Electrical and Computer Engineering from the same lab,
-              advised by <a href="https://cml.snu.ac.kr/?page_id=5948">Jungwoo Lee</a>.
-              My research focuses on reinforcement learning, human-aligned sequential decision-making, and uncertainty-aware learning.
-              I received my B.S. in Mathematics from <a href="https://math.korea.ac.kr">Korea University</a>.
+              <a href="https://ece.snu.ac.kr/">Seoul National University</a>,
+              where I received my Ph.D. advised by <a href="https://cml.snu.ac.kr/?page_id=5948">Jungwoo Lee</a>,
+              and my B.S. in Mathematics from <a href="https://math.korea.ac.kr">Korea University</a>.
             </p>
             <p style="text-align:center">
               E-mail: <a href="mailto:talium@cml.snu.ac.kr">talium@cml.snu.ac.kr</a>
@@ -42,7 +45,7 @@
               <a href="https://github.com/talium0713">GitHub</a> &nbsp;/&nbsp;
               <a href="https://scholar.google.com/citations?user=kVi85ZgAAAAJ">Google Scholar</a> &nbsp;/&nbsp;
               <a href="https://www.linkedin.com/in/taehyun-cho-510b752a0/">LinkedIn</a> &nbsp;/&nbsp;
-              <a href="/pdfs/cv_cth_20260515.pdf">CV</a>
+              <a href="/pdfs/CV_20260604.pdf">CV</a>
             </p>
           </td>
           <td class="header-photo" style="padding:24px;width:40%;text-align:center">
@@ -66,12 +69,12 @@
         <tr>
           <td class="section-body-cell">
             <p>
-              My research focuses on <b><span style="color:magenta;">sequential decision-making under uncertainty</span></b>, particularly in the context of <b>human feedback</b>.
+              My research focuses on <b><span style="color:#EC008D;">sequential decision-making under uncertainty</span></b>, particularly in the context of <b>human feedback</b>.
               I have extensively studied <b>distributional reinforcement learning (DistRL)</b>, <b>reinforcement learning from human feedback (RLHF)</b>, and <b>regret analysis</b>,
               aiming to bridge theory and practice.
             </p>
             <p>
-              My long-term goal is to build <b><span style="color:magenta;">human-aligned, socially-aware agents</span></b> &mdash; systems that reason about people and act on their preferences, values, and decisions.
+              My long-term goal is to build <b><span style="color:#EC008D;">human-aligned, socially-aware agents</span></b> &mdash; systems that reason about people and act on their preferences, values, and decisions.
               I draw inspiration from how humans make decisions: by seeking to understand the cognitive mechanisms underlying human choice and mathematically modeling the structure that governs interaction,
               I aim to develop both theoretical insights and practical algorithms for robust decision-making under uncertainty.
             </p>
@@ -79,7 +82,7 @@
               Currently, I’m interested in <b>reasoning LLM agents</b> and <b>regret-based decision theory</b>.
             </p>
             <!-- <p>
-              <b>I’m actively looking for <span style="color:magenta;">research scientist</span> or <span style="color:magenta;">postdoctoral opportunities</span> in theoretical foundations of reinforcement learning or reasoning LLM research.</b>
+              <b>I’m actively looking for <span style="color:#EC008D;">research scientist</span> or <span style="color:#EC008D;">postdoctoral opportunities</span> in theoretical foundations of reinforcement learning or reasoning LLM research.</b>
             </p> -->
           </td>
         </tr>
@@ -98,7 +101,7 @@
           {% for item in recent_news %}
             <tr class="news-row">
               <td style="padding:8px 24px;">
-                <span class="news-date">{{ item.date | date: "%b %Y" }}</span> &mdash; {{ item.title }}
+                {% assign m = item.date | date: "%B" %}{% if m.size > 4 %}{% assign m = item.date | date: "%b" %}{% endif %}<span class="news-date">{{ m }} {{ item.date | date: "%Y" }}</span> &mdash; {{ item.title }}
                 {% if item.description %}<br>{{ item.description }}{% endif %}
               </td>
             </tr>
@@ -131,6 +134,7 @@
                   {{ post.authors }}<br>
                   <em>{{ post.venue }}</em><br>
                   {% if post.paper %}<a href="{{ post.paper }}">paper</a> / {% endif %}
+                  {% if post.project %}<a href="{{ post.project }}">project page</a> / {% endif %}
                   {% if post.arxiv %}<a href="{{ post.arxiv }}">arxiv</a> / {% endif %}
                   {% if post.video %}<a href="{{ post.video }}">video</a> / {% endif %}
                   {% if post.code %}<a href="{{ post.code }}">code</a> / {% endif %}
@@ -206,7 +210,7 @@
               <td class="experience-text-cell" style="padding:1.2% 2.5%;vertical-align:middle;">
                 <h3>{{ exp.title }}</h3><br>
                 {% if exp.role %}<strong>{{ exp.role }}</strong><br>{% endif %}
-                {% if exp.period %}<em>{{ exp.period }}</em>{% endif %}
+                {% if exp.period %}<em>{{ exp.period }}{% if exp.location %} &middot; {{ exp.location }}{% endif %}</em>{% endif %}
               </td>
             </tr>
           {% endfor %}
@@ -230,7 +234,7 @@
           {% for item in award_items %}
             <tr class="news-row">
               <td style="padding:8px 24px;">
-                <span class="news-date">{{ item.period | default: item.date | date: "%b %Y" }}</span> &mdash; <strong>{{ item.title }}</strong>
+                {% if item.period %}<span class="news-date">{{ item.period }}</span>{% else %}{% assign m = item.date | date: "%B" %}{% if m.size > 4 %}{% assign m = item.date | date: "%b" %}{% endif %}<span class="news-date">{{ m }} {{ item.date | date: "%Y" }}</span>{% endif %} &mdash; <strong>{{ item.title }}</strong>
                 {% if item.organization %}<br><em>{{ item.organization }}</em>{% endif %}
               </td>
             </tr>
@@ -255,7 +259,7 @@
           {% for item in talk_items %}
             <tr class="news-row">
               <td style="padding:8px 24px;">
-                <span class="news-date">{{ item.period | default: item.date | date: "%b %Y" }}</span> &mdash; <strong>{{ item.event }}</strong>{% if item.venue %}, <em>{{ item.venue }}</em>{% endif %}
+                {% if item.period %}<span class="news-date">{{ item.period }}</span>{% else %}{% assign m = item.date | date: "%B" %}{% if m.size > 4 %}{% assign m = item.date | date: "%b" %}{% endif %}<span class="news-date">{{ m }} {{ item.date | date: "%Y" }}</span>{% endif %} &mdash; <strong>{{ item.event }}</strong>{% if item.venue %}, <em>{{ item.venue }}</em>{% endif %}
                 {% if item.title %}<br>{{ item.title }}{% endif %}
               </td>
             </tr>

@@ -7,7 +7,8 @@ categories: ['International Conference']
 author: "Taehyun Cho"
 authors: "Jung Min Lee, Dohyeok Lee, Seokhun Ju, <b>Taehyun Cho</b>, Jin Woo Koo, Li Zhao, Sangwoo Hong, Jungwoo Lee"
 venue: ICML 2026
-paper:
+project: https://jm-this.github.io/mvp_lam/
+paper: https://arxiv.org/abs/2602.03668
 arxiv:
 slides:
 code:

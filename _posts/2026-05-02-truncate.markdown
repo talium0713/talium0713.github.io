@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "When to Truncate Traces: Stochastic Truncation for Multi-Step Off-Policy RL"
-date:   2026-05-02 20:22:59 +00:00
+date:   2026-06-04 20:21:00 +00:00
 image: images/Truncate.png
 categories: ['Preprint']
 author: "Seungyub Han"
