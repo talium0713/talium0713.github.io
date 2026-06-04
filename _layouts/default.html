@@ -8,14 +8,23 @@
   <link rel="stylesheet" href="{{ site.baseurl }}/style.css?v={{ site.github.build_revision | default: site.time | date: '%s' }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body id="top" style>
-  <div class="top-fixed-banner">
-    <a href="#top">Taehyun Cho</a>
-  </div>
   {% include easter-toggle.html %}
+  <div class="top-fixed-banner">
+    <div class="banner-inner">
+      <a class="banner-title" href="#top">Taehyun Cho</a>
+      <nav class="banner-nav">
+        <a href="#about">About Me</a>
+        <a href="#news">News</a>
+        <a href="#publications">Publications</a>
+        <a href="#awards">Awards</a>
+        <a href="#talks">Talks</a>
+      </nav>
+    </div>
+  </div>
 
   <table class="page-wrap" style="width:100%;max-width:1080px;margin:auto;border-collapse:separate;border-spacing:0;">
     <tr><td>
@@ -23,14 +32,14 @@
       <!-- Header -->
       <table style="width:100%;margin:auto;">
         <tr class="header-row">
-          <td class="header-text" style="padding:24px;width:60%;vertical-align:middle">
+          <td class="header-text" style="padding:24px;width:68%;vertical-align:middle">
             <h1>Taehyun Cho</h1>
             <span class="header-tagline">AI Researcher &nbsp;&bull;&nbsp; Reinforcement Learning &amp; Decision Theory</span>
             <p>
               Starting August 2026, I will join the
               <a href="https://vectorinstitute.ai/">Vector Institute</a> (Vector Distinguished Postdoctoral Fellowship) and the
               <a href="http://www.fields.utoronto.ca/">Fields Institute</a> (Principles of Intelligence Fellowship),
-              hosted by Prof. Tim G. J. Rudner at the University of Toronto.
+              hosted by Prof. <a href="https://timrudner.com/">Tim G. J. Rudner</a> at the University of Toronto.
               
               I am currently a postdoctoral fellow at the
               <a href="https://cml.snu.ac.kr//">Cognitive Machine Learning Laboratory</a>,
@@ -47,8 +56,14 @@
               <a href="https://www.linkedin.com/in/taehyun-cho-510b752a0/">LinkedIn</a> &nbsp;/&nbsp;
               <a href="/pdfs/CV_20260604.pdf">CV</a>
             </p>
+            <p style="text-align:center;margin-top:8px;margin-bottom:0">
+              <label class="mode-toggle" for="personal-interest-toggle">
+                <span class="mode-toggle-segment seg-researcher">Researcher</span>
+                <span class="mode-toggle-segment seg-person">Person</span>
+              </label>
+            </p>
           </td>
-          <td class="header-photo" style="padding:24px;width:40%;text-align:center">
+          <td class="header-photo" style="padding:24px;width:32%;text-align:center">
             <div class="profile-easter">
               <img class="profile-image profile-image-main" src="images/img_cth.jpg" alt="profile photo">
               {% include easter-profile-overlay.html %}
@@ -63,7 +78,7 @@
       <table class="text-wide" style="width:100%;margin:auto;">
         <tr>
           <td class="section-header-cell">
-            <h2>Research Interest</h2>
+            <h2 id="about">Research Interest</h2>
           </td>
         </tr>
         <tr>
@@ -92,7 +107,7 @@
       <!-- Recent News -->
       <table class="text-wide" style="width:100%;margin:auto;">
         <tr>
-          <td class="section-header-cell"><h2>Recent News</h2></td>
+          <td class="section-header-cell"><h2 id="news">Recent News</h2></td>
         </tr>
       </table>
       <table class="news-table text-wide" style="width:100%;margin:auto;border-collapse:separate;border-spacing:0;">
@@ -118,7 +133,7 @@
       {% for section in sections %}
         <table style="width:100%;margin:auto;">
           <tr>
-            <td class="section-header-cell"><h2>{{ section }}{% if section == 'Preprint' %}s{% endif %}</h2></td>
+            <td class="section-header-cell"><h2{% if section == 'Dissertation' %} id="publications"{% endif %}>{{ section }}{% if section == 'Preprint' %}s{% endif %}</h2></td>
           </tr>
         </table>
 
@@ -225,7 +240,7 @@
       <!-- Awards & Honors -->
       <table class="text-narrow" style="width:100%;margin:auto;">
         <tr>
-          <td class="section-header-cell"><h2>Awards &amp; Honors</h2></td>
+          <td class="section-header-cell"><h2 id="awards">Awards &amp; Honors</h2></td>
         </tr>
       </table>
       <table class="news-table text-narrow" style="width:100%;margin:auto;border-collapse:separate;border-spacing:0;">
@@ -250,7 +265,7 @@
       <!-- Talks -->
       <table class="text-narrow" style="width:100%;margin:auto;">
         <tr>
-          <td class="section-header-cell"><h2>Talks</h2></td>
+          <td class="section-header-cell"><h2 id="talks">Talks</h2></td>
         </tr>
       </table>
       <table class="news-table text-narrow" style="width:100%;margin:auto;border-collapse:separate;border-spacing:0;">

@@ -134,14 +134,26 @@ h1 {
   background: #1368ce;
   z-index: 1000;
   display: flex;
-  align-items: center;
-  padding: 0 20px;
+  justify-content: center;
   box-shadow: 0 2px 12px rgba(16, 24, 40, 0.18);
+  transition: background-color .7s ease;
+}
+
+.easter-toggle:checked ~ .top-fixed-banner {
+  background: #EC008D;
+}
+
+.banner-inner {
+  width: 100%;
+  max-width: 1080px;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
 }
 
 .top-fixed-banner a,
 .top-fixed-banner a:visited {
-  font-family: 'Patrick Hand', 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: 'IBM Plex Sans', 'Lato', Verdana, Helvetica, sans-serif;
   color: #ffffff;
   font-size: 34px;
   font-weight: 700;
@@ -154,8 +166,65 @@ h1 {
   text-decoration: underline;
 }
 
+.banner-nav {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  white-space: nowrap;
+}
+
+.banner-nav a,
+.banner-nav a:visited {
+  font-family: 'IBM Plex Sans', 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+h2[id] {
+  scroll-margin-top: 76px;
+}
+
 .easter-toggle {
   display: none;
+}
+
+.mode-toggle {
+  display: inline-flex;
+  align-items: center;
+  background: #eef2f7;
+  border: 1px solid #d8e0ea;
+  border-radius: 999px;
+  padding: 3px;
+  cursor: pointer;
+  font-family: 'IBM Plex Sans', 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  user-select: none;
+}
+
+.mode-toggle-segment {
+  padding: 5px 14px;
+  border-radius: 999px;
+  color: #6e6e78;
+  transition: background .7s ease, color .7s ease;
+}
+
+.mode-toggle .seg-researcher {
+  background: #15233d;
+  color: #ffffff;
+}
+
+.easter-toggle:checked ~ .page-wrap .mode-toggle .seg-researcher {
+  background: transparent;
+  color: #6e6e78;
+}
+
+.easter-toggle:checked ~ .page-wrap .mode-toggle .seg-person {
+  background: #EC008D;
+  color: #ffffff;
 }
 
 .profile-easter {
@@ -195,7 +264,7 @@ h1 {
   top: 75%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  font-family: 'Patrick Hand', 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: 'IBM Plex Sans', 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 42px;
   font-weight: 700;
   color: #ffffff;
@@ -226,7 +295,7 @@ h1 {
 }
 
 .personal-interest-heading {
-  font-family: 'Patrick Hand', 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: 'IBM Plex Sans', 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 30px;
   font-weight: 700;
   line-height: 1.1;
@@ -418,12 +487,19 @@ span.highlight {
 
   .top-fixed-banner {
     height: 52px;
+  }
+
+  .banner-inner {
     padding: 0 14px;
   }
 
   .top-fixed-banner a,
   .top-fixed-banner a:visited {
     font-size: 28px;
+  }
+
+  .banner-nav {
+    display: none;
   }
 
   h1 {
