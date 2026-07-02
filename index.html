@@ -1,0 +1,791 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Taehyun Cho</title>
+  <meta charset="utf-8">
+  <meta name="author" content="Taehyun Cho">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/style.css?v=1783001996">
+  <link rel="canonical" href="https://talium0713.github.io/">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500;600;700&amp;display=swap" rel="stylesheet">
+</head>
+
+<body id="top" style>
+  <input id="personal-interest-toggle" class="easter-toggle" type="checkbox">
+
+  <div class="top-fixed-banner">
+    <div class="banner-inner">
+      <a class="banner-title" href="#top">Taehyun Cho</a>
+      <nav class="banner-nav">
+        <a href="#about">About Me</a>
+        <a href="#news">News</a>
+        <a href="#publications">Publications</a>
+        <a href="#awards">Awards</a>
+        <a href="#talks">Talks</a>
+      </nav>
+    </div>
+  </div>
+
+  <table class="page-wrap" style="width:100%;max-width:1080px;margin:auto;border-collapse:separate;border-spacing:0;">
+    <tr><td>
+<!-- Header -->
+<table style="width:100%;margin:auto;">
+<tr class="header-row">
+<td class="header-text" style="padding:24px;width:68%;vertical-align:middle">
+<h1>Taehyun Cho</h1>
+<span class="header-tagline">AI Researcher  •  Reinforcement Learning &amp; Decision Theory</span>
+<p>
+Starting August 2026, I will join the
+<a href="https://vectorinstitute.ai/">Vector Institute</a> (as a Vector Distinguished Postdoctoral Fellow) and the
+<a href="http://www.fields.utoronto.ca/">Fields Institute</a>.
+At both, my host will be Prof. <a href="https://timrudner.com/">Tim G. J. Rudner</a> of the University of Toronto.
+I am currently a postdoctoral fellow at the
+<a href="https://cml.snu.ac.kr//">Cognitive Machine Learning Laboratory</a>,
+<a href="https://ece.snu.ac.kr/">Seoul National University</a>,
+where I received my Ph.D. under Prof. <a href="https://cml.snu.ac.kr/?page_id=5948">Jungwoo Lee</a>.
+I hold a B.S. in Mathematics from <a href="https://math.korea.ac.kr">Korea University</a>.
+</p>
+<p style="text-align:center">
+E-mail: <a href="mailto:talium@cml.snu.ac.kr">talium@cml.snu.ac.kr</a>
+</p>
+<p style="text-align:center">
+<a href="https://github.com/talium0713">GitHub</a>  / 
+<a href="https://scholar.google.com/citations?user=kVi85ZgAAAAJ">Google Scholar</a>  / 
+<a href="https://www.linkedin.com/in/taehyun-cho-510b752a0/">LinkedIn</a>  / 
+<a href="/pdfs/CV_20260604.pdf">CV</a>
+</p>
+<p style="text-align:center;margin-top:8px;margin-bottom:0">
+<label class="mode-toggle" for="personal-interest-toggle">
+<span class="mode-toggle-segment seg-researcher">Researcher</span>
+<span class="mode-toggle-segment seg-person">Person</span>
+</label>
+</p>
+</td>
+<td class="header-photo" style="padding:24px;width:32%;text-align:center">
+<div class="profile-easter">
+<img class="profile-image profile-image-main" src="images/img_cth.jpg" alt="profile photo">
+<img class="profile-image profile-image-alt" src="images/challenger.png" alt="TFT challenger easter egg">
+<label for="personal-interest-toggle" class="profile-click-easter">Click!</label>
+</div>
+</td>
+</tr>
+</table>
+<div class="personal-interest-easter">
+<table class="text-wide" style="width:100%;margin:auto;">
+<tr>
+<td class="section-header-cell">
+<h2>Personal Interest</h2>
+</td>
+</tr>
+<tr>
+<td class="section-body-cell">
+<p><strong class="personal-interest-heading">Strategic Games:</strong><br>Having peaked at <i style="color:#EC008D">server rank #9 in Teamfight Tactics (TFT)</i> during a competitive season, I treat strategic games as experimental laboratories for studying decision-making under uncertainty. Competitive multi-agent environments like TFT require continuous adaptation, opponent modeling, and risk-sensitive planning. By analyzing my own high-level gameplay, I study how strategies are formed and adjusted in response to stochastic dynamics and strategic interaction. I am particularly interested in formalizing how these strategies emerge in competitive settings and translating these principles into reinforcement learning agents.</p>
+<p><strong class="personal-interest-heading">Behavioral Economics and Cognitive Science:</strong><br><i style="color:#EC008D">Behavioral economics</i> and <i style="color:#EC008D">cognitive science</i> play a central role in how I think about human decision-making. Many reinforcement learning formulations focus primarily on maximizing expected return, abstracting away inference-time constraints and bounded rationality. I am interested in understanding how human biases, risk perception, and cognitive limitations shape actual decisions. This perspective motivates my research on modeling human-aligned decision processes that go beyond expectation maximization and instead account for uncertainty, regret, and subjective evaluation of outcomes.</p>
+<p><strong class="personal-interest-heading">Philosophy:</strong><br>Since 2020, I have been part of a regular <i style="color:#EC008D">philosophy gathering</i> called "Sunday Salon." Our dialogues, initially inspired by French "Baccalauréat" topics, have expanded to address AI and its societal implications. These discussions have shaped my thinking on human uniqueness, responsibility, and subjective fulfillment. I am focused on understanding which aspects of human reasoning (such as regret, narrative self-reflection, and emotional responses) remain difficult to formalize, and how they might inform the development of human-aligned AI systems.</p>
+</td>
+</tr>
+</table>
+</div>
+<!-- Research Interest -->
+<table class="text-wide" style="width:100%;margin:auto;">
+<tr>
+<td class="section-header-cell">
+<h2 id="about">Research Interest</h2>
+</td>
+</tr>
+<tr>
+<td class="section-body-cell">
+<p>
+My research focuses on <b><span style="color:#EC008D;">sequential decision-making under uncertainty</span></b>, particularly in the context of <b>human feedback</b>.
+I have extensively studied <b>distributional reinforcement learning (DistRL)</b>, <b>reinforcement learning from human feedback (RLHF)</b>, and <b>regret analysis</b>,
+aiming to bridge theory and practice.
+</p>
+<p>
+My long-term goal is to build <b><span style="color:#EC008D;">human-aligned, socially aware agents</span></b> — systems that reason about people and act on their preferences, values, and decisions.
+I draw inspiration from how humans make decisions. By seeking to understand the cognitive mechanisms underlying human choice and mathematically modeling the structure that governs interaction,
+I aim to develop both theoretical insights and practical algorithms for robust decision-making under uncertainty.
+</p>
+<p>
+Currently, I’m interested in <b>reasoning LLM agents</b> and <b>regret-based decision theory</b>.
+</p>
+<!-- <p>
+<b>I’m actively looking for <span style="color:#EC008D;">research scientist</span> or <span style="color:#EC008D;">postdoctoral opportunities</span> in theoretical foundations of reinforcement learning or reasoning LLM research.</b>
+</p> -->
+</td>
+</tr>
+</table>
+<div class="section-spacer"></div>
+<!-- Recent News -->
+<table class="text-wide" style="width:100%;margin:auto;">
+<tr>
+<td class="section-header-cell"><h2 id="news">Recent News</h2></td>
+</tr>
+</table>
+<table class="news-table text-wide" style="width:100%;margin:auto;border-collapse:separate;border-spacing:0;">
+<tr class="news-row">
+<td style="padding:8px 24px;">
+<span class="news-date">June 2026</span> — I will join the <a href="https://vectorinstitute.ai/">Vector Institute</a> as a <b style="color:#EC008D;">Vector Distinguished Postdoctoral Fellow</b>, starting August 2026.
+</td>
+</tr>
+<tr class="news-row">
+<td style="padding:8px 24px;">
+<span class="news-date">May 2026</span> — I received the <b style="color:#EC008D;">INMC Young Researcher Award</b> from the Institute of New Media and Communications, Seoul National University.
+</td>
+</tr>
+<tr class="news-row">
+<td style="padding:8px 24px;">
+<span class="news-date">May 2026</span> — I received the <b style="color:#EC008D;">Gold Reviewer Award</b> (Top 25%) at <b style="color:#EC008D;">ICML 2026</b>.
+</td>
+</tr>
+<tr class="news-row">
+<td style="padding:8px 24px;">
+<span class="news-date">May 2026</span> — Our paper <b>A Regret Minimization Framework on Preference Learning in Large Language Models</b> was accepted at <b style="color:#EC008D;">ICML 2026</b> as a <b style="color:#EC008D;">Spotlight (Top 2.2%)</b>.
+</td>
+</tr>
+<tr class="news-row">
+<td style="padding:8px 24px;">
+<span class="news-date">May 2026</span> — Our paper <b>MVP-LAM: Learning Action-Centric Latent Action via Cross-Viewpoint Reconstruction</b> was accepted at <b style="color:#EC008D;">ICML 2026</b>.
+</td>
+</tr>
+<tr class="news-row">
+<td style="padding:8px 24px;">
+<span class="news-date">Apr 2026</span> — I gave a <b style="color:#EC008D;">Vector Visitor Research Talk</b> at the Vector Institute on <b>Rethinking Human Feedback: A Regret Minimization Perspective on Preference Learning</b>.
+</td>
+</tr>
+<tr class="news-row">
+<td style="padding:8px 24px;">
+<span class="news-date">Apr 2026</span> — I gave a talk at the <b style="color:#EC008D;">SNU AI Summit</b> on <b>Policy-labeled Preference Learning: Is Preference Enough for RLHF?</b>
+</td>
+</tr>
+<tr class="news-row">
+<td style="padding:8px 24px;">
+<span class="news-date">Feb 2026</span> — I was selected for the <b style="color:#EC008D;">Fields Institute - Principles of Intelligence Postdoctoral Fellowship</b>.
+</td>
+</tr>
+<tr class="news-row">
+<td style="padding:8px 24px;">
+<span class="news-date">Feb 2026</span> — I was selected for the <b style="color:#EC008D;">Sejong Science Fellowship</b> for the project <b>Distributional Regret Analysis for Human-Aligned Interactive Agentic AI under High Uncertainty.</b>
+</td>
+</tr>
+<tr class="news-row">
+<td style="padding:8px 24px;">
+<span class="news-date">Feb 2026</span> — I received my Ph.D. in Electrical and Computer Engineering at Seoul National University and was honored with the <b style="color:#EC008D;">Distinguished Dissertation Award</b>.
+</td>
+</tr>
+</table>
+<div class="section-spacer"></div>
+<table style="width:100%;margin:auto;">
+<tr>
+<td class="section-header-cell"><h2 id="publications">Dissertation</h2></td>
+</tr>
+</table>
+<table class="pub-table" style="width:100%;margin:auto;border-collapse:separate;border-spacing:0;">
+<tr class="pub-row">
+<td class="pub-image-cell" style="padding:2.5%;width:34%;min-width:240px;vertical-align:middle;">
+<img class="pub-image" src="/images/thesis.PNG" alt="project image">
+</td>
+<td class="pub-text-cell" style="padding:2.5%;width:66%;vertical-align:middle;">
+<h3>A Distributional Perspective on Human-Aligned Decision Making under Uncertainty</h3>
+<br>
+<b>Taehyun Cho</b><br>
+<em>Department of Electrical and Computer Engineering, Seoul National University<br><span style="color:#EC008D; font-weight:bold;">Distinguished Dissertation Award</span></em><br>
+<a href="/pdfs/thesis.pdf">paper</a> /
+<!--post content-->
+<!--<p>
+</p>-->
+</td>
+</tr>
+</table>
+<div class="section-spacer"></div>
+<table style="width:100%;margin:auto;">
+<tr>
+<td class="section-header-cell"><h2>Preprints</h2></td>
+</tr>
+</table>
+<table class="pub-table" style="width:100%;margin:auto;border-collapse:separate;border-spacing:0;">
+<tr class="pub-row">
+<td class="pub-image-cell" style="padding:2.5%;width:34%;min-width:240px;vertical-align:middle;">
+<img class="pub-image" src="/images/off_policy_admissibility.png" alt="project image">
+</td>
+<td class="pub-text-cell" style="padding:2.5%;width:66%;vertical-align:middle;">
+<h3>The Unique Off-policy Admissibility of KL Divergence in Direct Preference Optimization</h3>
+<br>
+<b>Taehyun Cho</b><br>
+<em>Work In Progress</em><br>
+<!--post content-->
+<!--<p>
+</p>-->
+</td>
+</tr>
+<tr class="pub-row">
+<td class="pub-image-cell" style="padding:2.5%;width:34%;min-width:240px;vertical-align:middle;">
+<img class="pub-image" src="/images/Async_2.png" alt="project image">
+</td>
+<td class="pub-text-cell" style="padding:2.5%;width:66%;vertical-align:middle;">
+<h3>Off-policy Direct Preference Optimization with Monotonic Improvement Guarantee</h3>
+<br>
+Seungyub Han*, <b>Taehyun Cho*</b>, Seokhun Ju, Dohyeong Kim, Kyungjae Lee, Jungwoo Lee<br>
+<em>Work In Progress</em><br>
+<!--post content-->
+<!--<p>
+</p>-->
+</td>
+</tr>
+<tr class="pub-row">
+<td class="pub-image-cell" style="padding:2.5%;width:34%;min-width:240px;vertical-align:middle;">
+<img class="pub-image" src="/images/PLP3_example2.png" alt="project image">
+</td>
+<td class="pub-text-cell" style="padding:2.5%;width:66%;vertical-align:middle;">
+<h3>An Axiomatization of Process Score Model: Your Process-level Feedback is Not a Reward</h3>
+<br>
+<b>Taehyun Cho</b>, Suhwan Kim, Seungyub Han, Seokhun Ju, Dohyeong Kim, Kyungjae Lee, Jungwoo Lee<br>
+<em>Work In Progress</em><br>
+<!--post content-->
+<!--<p>
+</p>-->
+</td>
+</tr>
+<tr class="pub-row">
+<td class="pub-image-cell" style="padding:2.5%;width:34%;min-width:240px;vertical-align:middle;">
+<img class="pub-image" src="/images/Smoothing.png" alt="project image">
+</td>
+<td class="pub-text-cell" style="padding:2.5%;width:66%;vertical-align:middle;">
+<h3>Probabilistic Smoothing with Ratio-Monotone Transforms for Global Optimization</h3>
+<br>
+Kukyoung Jang, <b>Taehyun Cho</b>, Junrui Zhang, Ping Xu, Kyungjae Lee<br>
+<em>Work In Progress</em><br>
+<!--post content-->
+<!--<p>
+</p>-->
+</td>
+</tr>
+<tr class="pub-row">
+<td class="pub-image-cell" style="padding:2.5%;width:34%;min-width:240px;vertical-align:middle;">
+<img class="pub-image" src="/images/Truncate.png" alt="project image">
+</td>
+<td class="pub-text-cell" style="padding:2.5%;width:66%;vertical-align:middle;">
+<h3>When to Truncate Traces: Stochastic Truncation for Multi-Step Off-Policy RL</h3>
+<br>
+Seungyub Han, <b>Taehyun Cho</b>, Dohyeong Kim, Kyungjae Lee, Jungwoo Lee<br>
+<em>Work In Progress</em><br>
+<!--post content-->
+<!--<p>
+</p>-->
+</td>
+</tr>
+</table>
+<div class="section-spacer"></div>
+<table style="width:100%;margin:auto;">
+<tr>
+<td class="section-header-cell"><h2>International Conference</h2></td>
+</tr>
+</table>
+<table class="pub-table" style="width:100%;margin:auto;border-collapse:separate;border-spacing:0;">
+<tr class="pub-row">
+<td class="pub-image-cell" style="padding:2.5%;width:34%;min-width:240px;vertical-align:middle;">
+<img class="pub-image" src="/images/reward_regret.png" alt="project image">
+</td>
+<td class="pub-text-cell" style="padding:2.5%;width:66%;vertical-align:middle;">
+<h3>A Regret Minimization Framework on Preference Learning in Large Language Models</h3>
+<br>
+Suhwan Kim*, <b>Taehyun Cho*</b>, Geonhyeong Kim, Yujin Kim, Youngsoo Jang, Moontae Lee, Jungwoo Lee<br>
+<em>ICML 2026 <span style="color:#EC008D; font-weight:bold;">Spotlight (Top 2.2%)</span></em><br>
+<a href="https://saramal.github.io/RePO-regret-based-rlhf/static/pdfs/Regret_based_RLHF_20260520.pdf">paper</a> /
+<a href="https://saramal.github.io/RePO-regret-based-rlhf/">project page</a> /
+<a href="/slides/RePO_ICML2026_slides.html">slides</a> /
+<!--post content-->
+<!--<p><p>RePO (Regret-based Preference Optimization) reframes RLHF as regret minimization rather than reward maximization. Motivated by the prospective and counterfactual nature of human feedback, RePO models preferences as behavior-conditioned assessments of relative suboptimality. It admits a closed-form update under KL-regularized RL and integrates seamlessly with direct preference optimization. Empirically, RePO achieves consistent gains on mathematical reasoning and human preference benchmarks, demonstrating a principled and effective alternative to reward-based RLHF.</p>
+</p>-->
+</td>
+</tr>
+<tr class="pub-row">
+<td class="pub-image-cell" style="padding:2.5%;width:34%;min-width:240px;vertical-align:middle;">
+<img class="pub-image" src="/images/MVP_LAM.png" alt="project image">
+</td>
+<td class="pub-text-cell" style="padding:2.5%;width:66%;vertical-align:middle;">
+<h3>MVP-LAM: Learning Action-Centric Latent Action via Cross-Viewpoint Reconstruction</h3>
+<br>
+Jung Min Lee, Dohyeok Lee, Seokhun Ju, <b>Taehyun Cho</b>, Jin Woo Koo, Li Zhao, Sangwoo Hong, Jungwoo Lee<br>
+<em>ICML 2026</em><br>
+<a href="https://arxiv.org/abs/2602.03668">paper</a> /
+<a href="https://jm-this.github.io/mvp_lam/">project page</a> /
+<!--post content-->
+<!--<p><p>Multi-View Point Latent Action Model (MVP-LAM) learns discrete latent actions that are highly informative about ground-truth actions from time-synchronized multi-view videos. By training with a cross-viewpoint reconstruction objective, where a latent action inferred from one view must explain the future in another view, MVP-LAM reduces reliance on viewpoint-specific cues and produces more action-centric representations. On Bridge V2 it achieves higher mutual information with ground-truth actions and improved action prediction, and pretraining VLAs with MVP-LAM latent actions improves downstream manipulation performance on the SIMPLER and LIBERO-Long benchmarks.</p>
+</p>-->
+</td>
+</tr>
+<tr class="pub-row">
+<td class="pub-image-cell" style="padding:2.5%;width:34%;min-width:240px;vertical-align:middle;">
+<img class="pub-image" src="/images/pareto.png" alt="project image">
+</td>
+<td class="pub-text-cell" style="padding:2.5%;width:66%;vertical-align:middle;">
+<h3>Pareto Optimal Risk-Agnostic Distributional Bandits with Heavy-Tail Rewards</h3>
+<br>
+Kyungjae Lee, Dohyeong Kim, <b>Taehyun Cho</b>, Chaeyeon Kim, Yunkyung Ko, Seungyub Han, Seokhun Ju, Dohyeok Lee, Sungbin Lim<br>
+<em>NeurIPS 2025</em><br>
+<a href="https://openreview.net/forum?id=q8oLLyA34Q">paper</a> /
+<!--post content-->
+<!--<p>
+</p>-->
+</td>
+</tr>
+<tr class="pub-row">
+<td class="pub-image-cell" style="padding:2.5%;width:34%;min-width:240px;vertical-align:middle;">
+<img class="pub-image" src="/images/PPL_img.png" alt="project image">
+</td>
+<td class="pub-text-cell" style="padding:2.5%;width:66%;vertical-align:middle;">
+<h3>Policy-labeled Preference Learning: Is Preference Enough for RLHF?</h3>
+<br>
+<b>Taehyun Cho*</b>, Seokhun Ju*, Seungyub Han, Dohyeong Kim, Kyungjae Lee, Jungwoo Lee<br>
+<em>ICML 2025 <span style="color:#EC008D; font-weight:bold;">Spotlight (Top 2.6%)</span></em><br>
+<a href="https://arxiv.org/abs/2505.06273">paper</a> /
+<a href="https://arxiv.org/abs/2505.06273">arxiv</a> /
+<!--post content-->
+<!--<p><p>Inspired by Direct Preference Optimization framework which directly learns optimal policy without explicit reward,
+we propose policy-labeled preference learning (PPL), to resolve likelihood mismatch issues by modeling human preferences with regret, which reflects behavior policy information.
+We also provide a contrastive KL regularization, derived from regret-based principles, to enhance RLHF in sequential decision making.</p>
+</p>-->
+</td>
+</tr>
+<tr class="pub-row">
+<td class="pub-image-cell" style="padding:2.5%;width:34%;min-width:240px;vertical-align:middle;">
+<img class="pub-image" src="/images/statistical_functional.png" alt="project image">
+</td>
+<td class="pub-text-cell" style="padding:2.5%;width:66%;vertical-align:middle;">
+<h3>Bellman Unbiasedness: Toward Provably Efficient Distributional Reinforcement Learning with General Value Function Approximation</h3>
+<br>
+<b>Taehyun Cho</b>, Seungyub Han, Kyungjae Lee, Seokhun Ju, Dohyeong Kim, Jungwoo Lee<br>
+<em>ICML 2025</em><br>
+<a href="https://arxiv.org/pdf/2407.21260">paper</a> /
+<a href="https://arxiv.org/abs/2407.21260">arxiv</a> /
+<!--post content-->
+<!--<p><p>Our theoretical results show that approximating the infinite-dimensional return distribution with a finite number of moment functionals is the only method to learn the statistical information unbiasedly including nonlinear statistical functional. Second, we propose a provably efficient algorithm, SF-LSVI, achieving a regret bound of $\tilde{O}(d_E H^{\frac{3}{2}}\sqrt{K})$.</p>
+</p>-->
+</td>
+</tr>
+<tr class="pub-row">
+<td class="pub-image-cell" style="padding:2.5%;width:34%;min-width:240px;vertical-align:middle;">
+<img class="pub-image" src="/images/kim_spectral.png" alt="project image">
+</td>
+<td class="pub-text-cell" style="padding:2.5%;width:66%;vertical-align:middle;">
+<h3>Spectral-Risk Safe Reinforcement Learning with Convergence Guarantees</h3>
+<br>
+Dohyeong Kim, <b>Taehyun Cho</b>, Seungyub Han, Hojun Chung, Kyungjae Lee, Songhwai Oh<br>
+<em>NeurIPS 2024</em><br>
+<a href="https://arxiv.org/pdf/2405.18698">paper</a> /
+<a href="https://arxiv.org/abs/2405.18698">arxiv</a> /
+<!--post content-->
+<!--<p><p>We propose a safe RL algorithm with spectral risk constraints, which shows convergence to an optimum in tabular settings.</p>
+</p>-->
+</td>
+</tr>
+<tr class="pub-row">
+<td class="pub-image-cell" style="padding:2.5%;width:34%;min-width:240px;vertical-align:middle;">
+<img class="pub-image" src="/images/pqr_1.png" alt="project image">
+</td>
+<td class="pub-text-cell" style="padding:2.5%;width:66%;vertical-align:middle;">
+<h3>Pitfall of Optimism: Distributional Reinforcement Learning by Randomizing Risk Criterion</h3>
+<br>
+<b>Taehyun Cho</b>, Seungyub Han, Heesoo Lee, Kyungjae Lee, Jungwoo Lee<br>
+<em>NeurIPS 2023</em><br>
+<a href="https://openreview.net/forum?id=v8u3EFAyW9">paper</a> /
+<a href="https://arxiv.org/abs/2310.16546">arxiv</a> /
+<!--post content-->
+<!--<p><p>We provide a perturbed distributional Bellman optimality operator by distorting the risk measure and prove the convergence and optimality of the proposed method with the weaker contraction property.</p>
+</p>-->
+</td>
+</tr>
+<tr class="pub-row">
+<td class="pub-image-cell" style="padding:2.5%;width:34%;min-width:240px;vertical-align:middle;">
+<img class="pub-image" src="/images/spqr.png" alt="project image">
+</td>
+<td class="pub-text-cell" style="padding:2.5%;width:66%;vertical-align:middle;">
+<h3>SPQR: Controlling Q-ensemble Independence with Spiked Random Model for Reinforcement Learning</h3>
+<br>
+Dohyeok Lee, Seungyub Han, <b>Taehyun Cho</b>, Jungwoo Lee<br>
+<em>NeurIPS 2023</em><br>
+<a href="https://openreview.net/forum?id=q0sdoFIfNg">paper</a> /
+<a href="https://arxiv.org/abs/2401.03137">arxiv</a> /
+<a href="https://github.com/dohyeoklee/SPQR">code</a> /
+<!--post content-->
+<!--<p><p>By introducing a novel regularization loss for Q-ensemble independence based on random matrix theory, we propose spiked Wishart Q-ensemble independence regularization (SPQR) for reinforcement learning.</p>
+</p>-->
+</td>
+</tr>
+<tr class="pub-row">
+<td class="pub-image-cell" style="padding:2.5%;width:34%;min-width:240px;vertical-align:middle;">
+<img class="pub-image" src="/images/nccl_uai.png" alt="project image">
+</td>
+<td class="pub-text-cell" style="padding:2.5%;width:66%;vertical-align:middle;">
+<h3>On the Convergence of Continual Learning with Adaptive Methods</h3>
+<br>
+Seungyub Han, Yeongmo Kim, <b>Taehyun Cho</b>, Jungwoo Lee<br>
+<em>UAI 2023</em><br>
+<a href="https://proceedings.mlr.press/v216/han23a.html">paper</a> /
+<a href="https://arxiv.org/abs/2404.05555">arxiv</a> /
+<!--post content-->
+<!--<p><p>In this paper, we provide a convergence analysis of memory-based continual learning with stochastic gradient descent and empirical evidence that training current tasks causes the cumulative degradation of previous tasks.</p>
+</p>-->
+</td>
+</tr>
+<tr class="pub-row">
+<td class="pub-image-cell" style="padding:2.5%;width:34%;min-width:240px;vertical-align:middle;">
+<img class="pub-image" src="/images/nccl_opt_ml.png" alt="project image">
+</td>
+<td class="pub-text-cell" style="padding:2.5%;width:66%;vertical-align:middle;">
+<h3>Adaptive Methods for Nonconvex Continual Learning</h3>
+<br>
+Seungyub Han, Yeongmo Kim, <b>Taehyun Cho</b>, Jungwoo Lee<br>
+<em>NeurIPS 2022 Optimization for Machine Learning Workshop</em><br>
+<a href="https://opt-ml.org/oldopt/papers/2022/paper14.pdf">paper</a> /
+<!--post content-->
+<!--<p><p>We propose an adaptive method for nonconvex continual learning (NCCL), which adjusts step sizes of both previous and current tasks with the gradients.</p>
+</p>-->
+</td>
+</tr>
+<tr class="pub-row">
+<td class="pub-image-cell" style="padding:2.5%;width:34%;min-width:240px;vertical-align:middle;">
+<img class="pub-image" src="/images/pqr_neurips2022_workshop.png" alt="project image">
+</td>
+<td class="pub-text-cell" style="padding:2.5%;width:66%;vertical-align:middle;">
+<h3>Perturbed Quantile Regression for Distributional Reinforcement Learning</h3>
+<br>
+<b>Taehyun Cho</b>, Seungyub Han, Heesoo Lee, Kyungjae Lee, Jungwoo Lee<br>
+<em>NeurIPS 2022 Deep RL Workshop</em><br>
+<a href="https://openreview.net/forum?id=-WXCYvc5E-P">paper</a> /
+<!--post content-->
+<!--<p><p>We provide a perturbed distributional Bellman optimality operator by distorting the risk measure in action selection, and prove the convergence and optimality of the proposed method by using the weaker contraction property.</p>
+</p>-->
+</td>
+</tr>
+<tr class="pub-row">
+<td class="pub-image-cell" style="padding:2.5%;width:34%;min-width:240px;vertical-align:middle;">
+<img class="pub-image" src="/images/chebyshev.png" alt="project image">
+</td>
+<td class="pub-text-cell" style="padding:2.5%;width:66%;vertical-align:middle;">
+<h3>Chebyshev polynomial codes: Task entanglement-based coding for distributed matrix multiplication</h3>
+<br>
+Sangwoo Hong, Heecheol Yang, Youngseok Yoon, <b>Taehyun Cho</b>, Jungwoo Lee<br>
+<em>ICML 2021</em><br>
+<a href="https://proceedings.mlr.press/v139/hong21b/hong21b.pdf">paper</a> /
+<a href="https://proceedings.mlr.press/v139/hong21b.html">arxiv</a> /
+<!--post content-->
+<!--<p><p>We propose Chebyshev polynomial codes, which can achieve order-wise improvement in encoding complexity at the master and communication load in distributed matrix multiplication using task entanglement.
+Chebyshev polynomial codes can provide significant reduction in overall processing time in distributed computing for matrix multiplication, which is a key computational component in modern deep learning.</p>
+</p>-->
+</td>
+</tr>
+</table>
+<div class="section-spacer"></div>
+<table style="width:100%;margin:auto;">
+<tr>
+<td class="section-header-cell"><h2>International Journal</h2></td>
+</tr>
+</table>
+<table class="pub-table" style="width:100%;margin:auto;border-collapse:separate;border-spacing:0;">
+<tr class="pub-row">
+<td class="pub-image-cell" style="padding:2.5%;width:34%;min-width:240px;vertical-align:middle;">
+<img class="pub-image" src="/images/GraphMARL.jpeg" alt="project image">
+</td>
+<td class="pub-text-cell" style="padding:2.5%;width:66%;vertical-align:middle;">
+<h3>Learning Graph Based Individual Intrinsic Reward For Multi-Agent Reinforcement Learning</h3>
+<br>
+Seokhun Ju, Seungyub Han, <b>Taehyun Cho</b>, Jungwoo Lee, Taeyoung Lee, Minkyoung Kim, Jinho Ahn<br>
+<em>ICT Express</em><br>
+<a href="https://www.sciencedirect.com/science/article/pii/S2405959525001109?via%3Dihub">paper</a> /
+<!--post content-->
+<!--<p>
+</p>-->
+</td>
+</tr>
+<tr class="pub-row">
+<td class="pub-image-cell" style="padding:2.5%;width:34%;min-width:240px;vertical-align:middle;">
+<img class="pub-image" src="/images/shallow.PNG" alt="project image">
+</td>
+<td class="pub-text-cell" style="padding:2.5%;width:66%;vertical-align:middle;">
+<h3>Optimized shallow neural networks for sum-rate maximization in energy harvesting downlink multiuser NOMA systems</h3>
+<br>
+Haesung Kim, <b>Taehyun Cho</b>, Jungwoo Lee, Wongae Shin, H Vincent Poor<br>
+<em>IEEE Journal on Selected Areas in Communications</em><br>
+<a href="https://ieeexplore.ieee.org/abstract/document/9174757">paper</a> /
+<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9174757">arxiv</a> /
+<!--post content-->
+<!--<p><p>This article considers a power allocation problem in energy harvesting downlink non-orthogonal multiple access (NOMA) systems in which a transmitter sends desired messages to their respective receivers by using harvested energy.
+To tackle this problem, we make use of a reinforcement learning approach based on a shallow neural network structure.</p>
+</p>-->
+</td>
+</tr>
+<tr class="pub-row">
+<td class="pub-image-cell" style="padding:2.5%;width:34%;min-width:240px;vertical-align:middle;">
+<img class="pub-image" src="/images/energy_harvesting.png" alt="project image">
+</td>
+<td class="pub-text-cell" style="padding:2.5%;width:66%;vertical-align:middle;">
+<h3>An Efficient Neural Network Architecture for Rate Maximization in Energy Harvesting Downlink Channels</h3>
+<br>
+Haesung Kim, <b>Taehyun Cho</b>, Jungwoo Lee, Wonjae Shin, H Vincent Poor<br>
+<em>2020 IEEE International Symposium on Information Theory (ISIT)</em><br>
+<a href="https://ieeexplore.ieee.org/abstract/document/9174136">paper</a> /
+<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9174136">arxiv</a> /
+<!--post content-->
+<!--<p><p>We prove that the optimal power allocation policy that maximizes the sum-rate is an increasing function for harvested energy, channel gains, and remaining battery, regardless of the number of users in the downlink channels.
+We use this proof as a mathematical basis for the construction of a shallow neural network that can fully reflect the increasing property of the optimal policy.</p>
+</p>-->
+</td>
+</tr>
+</table>
+<div class="section-spacer"></div>
+<!-- Research Projects -->
+<table style="width:100%;margin:auto;">
+<tr>
+<td class="section-header-cell"><h2>Research Projects</h2></td>
+</tr>
+</table>
+<table class="pub-table" style="width:100%;margin:auto;border-collapse:separate;border-spacing:0;">
+<tr class="pub-row">
+<td class="pub-image-cell" style="padding:2.5%;width:34%;min-width:240px;vertical-align:middle;">
+<img class="pub-image" src="/images/Fields.png" alt="Fields Institute - Principles of Intelligence Postdoctoral Fellowship">
+</td>
+<td class="pub-text-cell" style="padding:2.5%;width:66%;vertical-align:middle;">
+<h3>Fields Institute - Principles of Intelligence Postdoctoral Fellowship</h3>
+<br>
+<em>
+Funded by Fields Institute
+(
+2026.08 - 2027.08
+)
+</em><br>
+<br>
+</td>
+</tr>
+<tr class="pub-row">
+<td class="pub-image-cell" style="padding:2.5%;width:34%;min-width:240px;vertical-align:middle;">
+<img class="pub-image" src="/images/NRF.jpg" alt="Sejong Science Fellowship">
+</td>
+<td class="pub-text-cell" style="padding:2.5%;width:66%;vertical-align:middle;">
+<h3>Sejong Science Fellowship</h3>
+<br>
+Distributional Regret Analysis for Human-Aligned Interactive Agentic AI under High Uncertainty<br>
+<em>
+Funded by National Research Foundation of Korea
+(
+2026.03 - 2031.02
+)
+</em><br>
+<br>
+</td>
+</tr>
+</table>
+<div class="section-spacer"></div>
+<!-- Education & Research Experience -->
+<table style="width:100%;margin:auto;">
+<tr>
+<td class="section-header-cell"><h2>Education &amp; Research Experience</h2></td>
+</tr>
+</table>
+<table class="experience-table" style="width:100%;margin:auto;border-collapse:collapse;">
+<tr class="experience-row">
+<td class="experience-logo-cell" style="padding:1.2% 2.5%;vertical-align:middle;">
+<img class="experience-logo" src="/images/symbol/vector_logo.png" alt="Vector Institute logo">
+</td>
+<td class="experience-text-cell" style="padding:1.2% 2.5%;vertical-align:middle;">
+<h3>Vector Institute</h3>
+<br>
+<strong>Vector Distinguished Postdoctoral Fellow</strong><br>
+<em>2026.08 - 2027.08 · Toronto, Canada</em>
+</td>
+</tr>
+<tr class="experience-row">
+<td class="experience-logo-cell" style="padding:1.2% 2.5%;vertical-align:middle;">
+<img class="experience-logo" src="/images/symbol/Fields.png" alt="Fields Institute logo">
+</td>
+<td class="experience-text-cell" style="padding:1.2% 2.5%;vertical-align:middle;">
+<h3>Fields Institute</h3>
+<br>
+<strong>Principles of Intelligence Postdoctoral Fellow</strong><br>
+<em>2026.08 - 2027.08 · Toronto, Canada</em>
+</td>
+</tr>
+<tr class="experience-row">
+<td class="experience-logo-cell" style="padding:1.2% 2.5%;vertical-align:middle;">
+<img class="experience-logo" src="/images/symbol/lgresearch_symbol.jpg" alt="LG AI Research logo">
+</td>
+<td class="experience-text-cell" style="padding:1.2% 2.5%;vertical-align:middle;">
+<h3>LG AI Research</h3>
+<br>
+<strong>Research Intern, Superintelligence Lab</strong><br>
+<em>2024.12 - 2025.05</em>
+</td>
+</tr>
+<tr class="experience-row">
+<td class="experience-logo-cell" style="padding:1.2% 2.5%;vertical-align:middle;">
+<img class="experience-logo" src="/images/symbol/snu_symbol.png" alt="Seoul National University logo">
+</td>
+<td class="experience-text-cell" style="padding:1.2% 2.5%;vertical-align:middle;">
+<h3>Seoul National University</h3>
+<br>
+<strong>Ph.D./M.S. in Electrical and Computer Engineering</strong><br>
+<em>2020.03 - 2026.02</em>
+</td>
+</tr>
+<tr class="experience-row">
+<td class="experience-logo-cell" style="padding:1.2% 2.5%;vertical-align:middle;">
+<img class="experience-logo" src="/images/symbol/korea_symbol.png" alt="Korea University logo">
+</td>
+<td class="experience-text-cell" style="padding:1.2% 2.5%;vertical-align:middle;">
+<h3>Korea University</h3>
+<br>
+<strong>B.S. in Mathematics</strong><br>
+<em>2013.03 - 2020.02</em>
+</td>
+</tr>
+</table>
+<div class="section-spacer"></div>
+<!-- Awards & Honors -->
+<table class="text-narrow" style="width:100%;margin:auto;">
+<tr>
+<td class="section-header-cell"><h2 id="awards">Awards &amp; Honors</h2></td>
+</tr>
+</table>
+<table class="news-table text-narrow" style="width:100%;margin:auto;border-collapse:separate;border-spacing:0;">
+<tr class="news-row">
+<td style="padding:8px 24px;">
+<span class="news-date">Aug 2026 – Aug 2027</span> — <strong>Vector Distinguished Postdoctoral Fellowship</strong>
+<br><em>Vector Institute</em>
+</td>
+</tr>
+<tr class="news-row">
+<td style="padding:8px 24px;">
+<span class="news-date">May 2026</span> — <strong>INMC Young Researcher Award</strong>
+<br><em>Institute of New Media and Communications (INMC)</em>
+</td>
+</tr>
+<tr class="news-row">
+<td style="padding:8px 24px;">
+<span class="news-date">May 2026</span> — <strong>Gold Reviewer Award (Top 25%)</strong>
+<br><em>International Conference on Machine Learning (ICML)</em>
+</td>
+</tr>
+<tr class="news-row">
+<td style="padding:8px 24px;">
+<span class="news-date">Mar 2026</span> — <strong>Principles of Intelligence Postdoctoral Fellowship</strong>
+<br><em>Fields Institute</em>
+</td>
+</tr>
+<tr class="news-row">
+<td style="padding:8px 24px;">
+<span class="news-date">Mar 2026 – Feb 2031</span> — <strong>Sejong Science Fellowship</strong>
+<br><em>National Research Foundation of Korea (NRF)</em>
+</td>
+</tr>
+<tr class="news-row">
+<td style="padding:8px 24px;">
+<span class="news-date">Feb 2026</span> — <strong>Distinguished Dissertation Award</strong>
+<br><em>Seoul National University (SNU)</em>
+</td>
+</tr>
+<tr class="news-row">
+<td style="padding:8px 24px;">
+<span class="news-date">Jan 2023</span> — <strong>Certificate of Commendation</strong>
+<br><em>Center for Applied Research in Artificial Intelligence (CARAI)</em>
+</td>
+</tr>
+<tr class="news-row">
+<td style="padding:8px 24px;">
+<span class="news-date">Mar 2020 – Feb 2026</span> — <strong>Brain Korea 21 Plus Scholarship</strong>
+<br><em>Seoul National University (SNU)</em>
+</td>
+</tr>
+</table>
+<div class="section-spacer"></div>
+<!-- Talks -->
+<table class="text-narrow" style="width:100%;margin:auto;">
+<tr>
+<td class="section-header-cell"><h2 id="talks">Talks</h2></td>
+</tr>
+</table>
+<table class="news-table text-narrow" style="width:100%;margin:auto;border-collapse:separate;border-spacing:0;">
+<tr class="news-row">
+<td style="padding:8px 24px;">
+<span class="news-date">Apr 2026</span> — <strong>Vector Visitor Research Talk</strong>, <em>Vector Institute</em>
+<br>Rethinking Human Feedback: A Regret Minimization Perspective on Preference Learning
+</td>
+</tr>
+<tr class="news-row">
+<td style="padding:8px 24px;">
+<span class="news-date">Apr 2026</span> — <strong>SNU AI Summit</strong>, <em>Seoul National University</em>
+<br>Policy-labeled Preference Learning: Is Preference Enough for RLHF?
+</td>
+</tr>
+<tr class="news-row">
+<td style="padding:8px 24px;">
+<span class="news-date">May 2025</span> — <strong>LG AI Research Seminar</strong>, <em>LG AI Research</em>
+<br>Policy Optimization with Process Score in LRMs
+</td>
+</tr>
+<tr class="news-row">
+<td style="padding:8px 24px;">
+<span class="news-date">Dec 2024</span> — <strong>LG AI Research Seminar</strong>, <em>LG AI Research</em>
+<br>Policy-labeled Preference Learning: Is Preference Enough for RLHF?
+</td>
+</tr>
+<tr class="news-row">
+<td style="padding:8px 24px;">
+<span class="news-date">Aug 2023</span> — <strong>LG Tech Talk</strong>, <em>LG AI Research</em>
+<br>Pitfall of Optimism: Distributional Reinforcement Learning with Randomized Risk Criterion
+</td>
+</tr>
+<tr class="news-row">
+<td style="padding:8px 24px;">
+<span class="news-date">May 2023</span> — <strong>AIIS Spring Retreat Program</strong>, <em>Seoul National University</em>
+<br>Pitfall of Optimism: Distributional Reinforcement Learning with Randomized Risk Criterion
+</td>
+</tr>
+</table>
+<div class="section-spacer"></div>
+<!-- Academic Services -->
+<table class="text-narrow" style="width:100%;margin:auto;">
+<tr>
+<td class="section-header-cell"><h2>Academic Services</h2></td>
+</tr>
+</table>
+<table class="text-narrow" style="width:100%;margin:auto;">
+<tr>
+<td class="section-body-cell">
+<strong>Conference Reviewer</strong>
+<ul>
+<li>International Conference on Machine Learning (ICML) 2022 – 2026
+<ul><li>Gold Reviewer Award (Top 25%)</li></ul>
+</li>
+<li>Neural Information Processing Systems (NeurIPS) 2022 – 2025</li>
+<li>International Conference on Learning Representations (ICLR) 2023 – 2025</li>
+<li>AAAI Conference on Artificial Intelligence (AAAI) 2023</li>
+</ul>
+<strong>Workshop Reviewer</strong>
+<ul>
+<li>RLxF: Reinforcement Learning from World Feedback @ ICML 2026</li>
+</ul>
+<strong>Journal Reviewer</strong>
+<ul>
+<li>Transactions on Machine Learning Research (TMLR) 2026</li>
+<li>The Journal of Korean Institute of Communications and Information Sciences (JKICS) 2026</li>
+</ul>
+</td>
+</tr>
+</table>
+<div class="section-spacer"></div>
+<!-- Footer -->
+<table style="width:100%;margin:auto;">
+<tr>
+<td style="padding:0;">
+<p style="text-align:center;font-size:small;">
+Design and source code from <a href="https://jonbarron.info">Jon Barron's website</a>
+</p>
+</td>
+</tr>
+</table>
+</td></tr>
+  </table>
+</body>
+</html>
