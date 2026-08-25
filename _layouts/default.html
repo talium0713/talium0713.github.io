@@ -7,8 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="{{ site.baseurl }}/style.css?v={{ site.github.build_revision | default: site.time | date: '%s' }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="{{ site.baseurl }}/fonts/Barlow-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{{ site.baseurl }}/fonts/Barlow-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{{ site.baseurl }}/fonts/RobotoSlab-latin.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 
 <body id="top" style>
@@ -34,15 +35,13 @@
         <tr class="header-row">
           <td class="header-text" style="padding:24px;width:68%;vertical-align:middle">
             <h1>Taehyun Cho</h1>
-            <span class="header-tagline">AI Researcher &nbsp;&bull;&nbsp; Reinforcement Learning &amp; Decision Theory</span>
             <p>
-              Starting August 2026, I will join the
-              <a href="https://vectorinstitute.ai/">Vector Institute</a> (as a Vector Distinguished Postdoctoral Fellow) and the
-              <a href="http://www.fields.utoronto.ca/">Fields Institute</a>.
-              At both, my host will be Prof. <a href="https://timrudner.com/">Tim G. J. Rudner</a> of the University of Toronto.
-              I am currently a postdoctoral fellow at the
-              <a href="https://cml.snu.ac.kr//">Cognitive Machine Learning Laboratory</a>,
-              <a href="https://ece.snu.ac.kr/">Seoul National University</a>,
+              I am a Vector Distinguished Postdoctoral Fellow at the
+              <a href="https://vectorinstitute.ai/">Vector Institute</a> and a Principles of Intelligence Postdoctoral Fellow at the
+              <a href="http://www.fields.utoronto.ca/people-and-contacts">Fields Institute</a>,
+              hosted by Prof. <a href="https://timrudner.com/">Tim G. J. Rudner</a> of the University of Toronto.
+              I am also a postdoctoral fellow at
+              <a href="https://ece.snu.ac.kr/">Seoul National University</a>, supported by the Sejong Science Fellowship of the National Research Foundation of Korea,
               where I received my Ph.D. under Prof. <a href="https://cml.snu.ac.kr/?page_id=5948">Jungwoo Lee</a>.
               I hold a B.S. in Mathematics from <a href="https://math.korea.ac.kr">Korea University</a>.
             </p>
@@ -53,7 +52,7 @@
               <a href="https://github.com/talium0713">GitHub</a> &nbsp;/&nbsp;
               <a href="https://scholar.google.com/citations?user=kVi85ZgAAAAJ">Google Scholar</a> &nbsp;/&nbsp;
               <a href="https://www.linkedin.com/in/taehyun-cho-510b752a0/">LinkedIn</a> &nbsp;/&nbsp;
-              <a href="/pdfs/CV_20260604.pdf">CV</a>
+              <a href="/pdfs/CV20260825.pdf">CV</a>
             </p>
             <p style="text-align:center;margin-top:8px;margin-bottom:0">
               <label class="mode-toggle" for="personal-interest-toggle">
@@ -74,7 +73,7 @@
       {% include easter-personal-interest.html %}
 
       <!-- Research Interest -->
-      <table class="text-wide" style="width:100%;margin:auto;">
+      <table style="width:100%;margin:auto;">
         <tr>
           <td class="section-header-cell">
             <h2 id="about">Research Interest</h2>
@@ -83,20 +82,23 @@
         <tr>
           <td class="section-body-cell">
             <p>
-              My research focuses on <b><span style="color:#EC008D;">sequential decision-making under uncertainty</span></b>, particularly in the context of <b>human feedback</b>.
+              My research focuses on <b><span style="color:#EC008B;">sequential decision-making under uncertainty</span></b>, particularly in the context of <b>human feedback</b>.
               I have extensively studied <b>distributional reinforcement learning (DistRL)</b>, <b>reinforcement learning from human feedback (RLHF)</b>, and <b>regret analysis</b>,
               aiming to bridge theory and practice.
             </p>
             <p>
-              My long-term goal is to build <b><span style="color:#EC008D;">human-aligned, socially aware agents</span></b> &mdash; systems that reason about people and act on their preferences, values, and decisions.
+              My long-term goal is to build <b><span style="color:#EC008B;">human-aligned, socially aware agents</span></b> &mdash; systems that reason about people, navigate the dynamics of human interaction, and act on their preferences, values, and decisions.
               I draw inspiration from how humans make decisions. By seeking to understand the cognitive mechanisms underlying human choice and mathematically modeling the structure that governs interaction,
               I aim to develop both theoretical insights and practical algorithms for robust decision-making under uncertainty.
             </p>
-            <p>
-              Currently, I’m interested in <b>reasoning LLM agents</b> and <b>regret-based decision theory</b>.
+            <p class="current-focus">
+              Currently, I am focusing on (i) a <b>regret minimization framework for agentic AI</b>,
+              and (ii) the <b>theoretical foundations of off-policy post-training</b>.
+              <br>
+              Feel free to reach out if you are interested!
             </p>
             <!-- <p>
-              <b>I’m actively looking for <span style="color:#EC008D;">research scientist</span> or <span style="color:#EC008D;">postdoctoral opportunities</span> in theoretical foundations of reinforcement learning or reasoning LLM research.</b>
+              <b>I’m actively looking for <span style="color:#EC008B;">research scientist</span> or <span style="color:#EC008B;">postdoctoral opportunities</span> in theoretical foundations of reinforcement learning or reasoning LLM research.</b>
             </p> -->
           </td>
         </tr>
@@ -104,12 +106,13 @@
       <div class="section-spacer"></div>
 
       <!-- Recent News -->
-      <table class="text-wide" style="width:100%;margin:auto;">
+      <table style="width:100%;margin:auto;">
         <tr>
           <td class="section-header-cell"><h2 id="news">Recent News</h2></td>
         </tr>
       </table>
-      <table class="news-table text-wide" style="width:100%;margin:auto;border-collapse:separate;border-spacing:0;">
+      <div class="news-scroll">
+      <table class="news-table" style="width:100%;margin:auto;border-collapse:separate;border-spacing:0;">
         {% assign recent_news = site.news | sort: "date" | reverse %}
         {% if recent_news.size > 0 %}
           {% for item in recent_news %}
@@ -126,6 +129,7 @@
           </tr>
         {% endif %}
       </table>
+      </div>
       <div class="section-spacer"></div>
 
       {% assign sections = "Dissertation,Preprint,International Conference,International Journal" | split: "," %}
@@ -140,10 +144,10 @@
           {% for post in site.posts %}
             {% if post.categories contains section %}
               <tr class="pub-row">
-                <td class="pub-image-cell" style="padding:2.5%;width:34%;min-width:240px;vertical-align:middle;">
+                <td class="pub-image-cell" style="padding:6px;width:34%;min-width:240px;vertical-align:middle;">
                   <img class="pub-image" src="/{{ post.image }}" alt="project image">
                 </td>
-                <td class="pub-text-cell" style="padding:2.5%;width:66%;vertical-align:middle;">
+                <td class="pub-text-cell" style="padding:6px 26px;width:66%;vertical-align:middle;">
                   <h3>{{ post.title }}</h3><br>
                   {{ post.authors }}<br>
                   <em>{{ post.venue }}</em><br>
@@ -170,7 +174,7 @@
           <td class="section-header-cell"><h2>Research Projects</h2></td>
         </tr>
       </table>
-      <table class="pub-table" style="width:100%;margin:auto;border-collapse:separate;border-spacing:0;">
+      <table class="pub-table project-table" style="width:100%;margin:auto;border-collapse:separate;border-spacing:0;">
         {% assign project_items = site.projects | sort: "date" | reverse %}
         {% if project_items.size > 0 %}
           {% for project in project_items %}
