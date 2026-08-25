@@ -734,12 +734,19 @@ span.highlight {
     border-radius: 12px;
   }
 
+  // Stacked cards give every figure the full column width, so without a fixed
+  // band their heights swing with the aspect ratio. Pin the band and letterbox.
   .pub-image {
     width: 100% !important;
     max-width: 100%;
-    height: auto;
+    height: 200px;
     max-height: none;
+    object-fit: contain;
     transform: scale(1.01);
+  }
+
+  .project-table .pub-image {
+    height: 120px;
   }
 
   .pub-table {
