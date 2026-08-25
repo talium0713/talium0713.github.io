@@ -5,7 +5,7 @@ date:   2025-05-06 20:20:59 +00:00
 image: images/statistical_functional.png
 categories: ['International Conference']
 author: "Taehyun Cho"
-authors: "<b>Taehyun Cho</b>, Seungyub Han, Kyungjae Lee, Seokhun Ju, Dohyeong Kim, Jungwoo Lee"
+authors: "<b>Taehyun Cho</b>, Seungyub Han, Seokhun Ju, Dohyeong Kim, Kyungjae Lee, Jungwoo Lee"
 venue: ICML 2025
 paper: https://arxiv.org/pdf/2407.21260
 arxiv: https://arxiv.org/abs/2407.21260

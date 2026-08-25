@@ -5,5 +5,5 @@ image: images/NRF.jpg
 project_name: "Distributional Regret Analysis for Human-Aligned Interactive Agentic AI under High Uncertainty"
 funder: "National Research Foundation of Korea"
 duration: "2026.03 - 2031.02"
-description: ""
+description: "Total funding: KRW 600M"
 ---

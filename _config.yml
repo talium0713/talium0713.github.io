@@ -57,6 +57,7 @@ url: "https://talium0713.github.io" # the base hostname & protocol for your site
 #permalink: /:title/
 permalink: /
 future: true
+timezone: Asia/Seoul
 
 
 # The release of Jekyll Now that you're using

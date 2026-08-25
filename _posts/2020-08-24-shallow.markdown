@@ -4,8 +4,8 @@ title:  "Optimized shallow neural networks for sum-rate maximization in energy h
 date:   2020-08-24 20:21:59 +00:00
 image: images/shallow.PNG
 categories: ['International Journal']
-author: "Haesung Kim"
-authors: "Haesung Kim, <b>Taehyun Cho</b>, Jungwoo Lee, Wongae Shin, H Vincent Poor"
+author: "Heasung Kim"
+authors: "Heasung Kim, <b>Taehyun Cho</b>, Jungwoo Lee, Wonjae Shin, H. Vincent Poor"
 venue: IEEE Journal on Selected Areas in Communications
 paper: https://ieeexplore.ieee.org/abstract/document/9174757
 arxiv: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9174757

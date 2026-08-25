@@ -4,8 +4,8 @@ title:  "An Efficient Neural Network Architecture for Rate Maximization in Energ
 date:   2020-06-21 20:21:59 +00:00
 image: images/energy_harvesting.png
 categories: ['International Journal']
-author: "Haesung Kim"
-authors: "Haesung Kim, <b>Taehyun Cho</b>, Jungwoo Lee, Wonjae Shin, H Vincent Poor"
+author: "Heasung Kim"
+authors: "Heasung Kim, <b>Taehyun Cho</b>, Jungwoo Lee, Wonjae Shin, H. Vincent Poor"
 venue: 2020 IEEE International Symposium on Information Theory (ISIT)
 paper: https://ieeexplore.ieee.org/abstract/document/9174136
 arxiv: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9174136
