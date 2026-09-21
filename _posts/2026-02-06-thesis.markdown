@@ -10,5 +10,6 @@ venue: Department of Electrical and Computer Engineering, Seoul National Univers
 paper: /pdfs/thesis.pdf
 arxiv: 
 slides: 
+presentation: /slides/ku-job-talk/
 code: 
 ---
