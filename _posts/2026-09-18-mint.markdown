@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "MINT: Meeting-time INdicators for Truncation in Multi-Step Off-Policy RL"
+date:   2026-09-18 20:22:00 +00:00
+image: images/Truncate.png
+categories: ['International Conference']
+author: "Seungyub Han"
+authors: "Seungyub Han, <b>Taehyun Cho</b>, Dohyeong Kim, Kyungjae Lee, Jungwoo Lee"
+venue: NeurIPS 2026
+paper: https://openreview.net/forum?id=AR4QW2PjBU
+arxiv:
+slides:
+code:
+---
